@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Maria Helen Pandian — Director of Operations · Dubai</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--g:#C9A84C;--gl:#F0D485;--gd:#7A6020;--n:#020B18;--n2:#071428;--n3:#0C1E38;--w:#fff;--muted:#8A9BB5;--faint:#4A5A72}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:var(--n);color:var(--w);font-family:system-ui,-apple-system,sans-serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+#cv{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:.9rem 3rem;background:rgba(2,11,24,.92);border-bottom:1px solid rgba(201,168,76,.18)}
+.nl{font-size:1.1rem;font-weight:700;background:linear-gradient(135deg,var(--g),var(--gl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:3px}
+.nm{display:flex;gap:2rem;list-style:none}
+.nm a{font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);transition:color .3s}
+.nm a:hover{color:var(--g)}
+.nav-cta{padding:.5rem 1.4rem;border:1px solid var(--g);color:var(--g);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;transition:all .3s;cursor:pointer;background:transparent}
+.nav-cta:hover{background:rgba(201,168,76,.12)}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:8rem 2rem 4rem;position:relative;z-index:1}
+.hero-pill{display:inline-flex;align-items:center;gap:.6rem;padding:.4rem 1.2rem;border:1px solid rgba(201,168,76,.4);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--g);margin-bottom:2rem;animation:fd 1s ease both}
+.hero-pill span{width:6px;height:6px;background:var(--g);border-radius:50%;animation:pulse 2s infinite}
+h1.hname{font-size:clamp(3rem,9vw,6.5rem);font-weight:900;line-height:.95;letter-spacing:-2px;margin-bottom:1rem;animation:fu .9s ease .2s both;font-family:Georgia,serif}
+.hname .w1{color:var(--w)}
+.hname .w2{background:linear-gradient(135deg,var(--gd),var(--g),var(--gl),var(--g));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-size:300% auto;animation:shine 4s linear infinite,fu .9s ease .2s both}
+@keyframes shine{to{background-position:300% center}}
+.htitle{font-size:clamp(.9rem,2vw,1.1rem);color:var(--muted);letter-spacing:2px;margin-bottom:.8rem;animation:fu .9s ease .4s both}
+.hsubt{font-size:clamp(.8rem,1.5vw,1rem);color:var(--g);letter-spacing:1px;margin-bottom:3rem;animation:fu .9s ease .55s both}
+.hbtns{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;animation:fu .9s ease .7s both}
+.btn-g{padding:.9rem 2.4rem;background:linear-gradient(135deg,var(--gd),var(--g));color:var(--n);font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;border:none;cursor:pointer;transition:all .3s;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.btn-g:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(201,168,76,.4)}
+.btn-o{padding:.9rem 2.4rem;background:transparent;color:var(--g);font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;border:1px solid rgba(201,168,76,.5);cursor:pointer;transition:all .3s}
+.btn-o:hover{background:rgba(201,168,76,.1);transform:translateY(-3px)}
+.scroll-arr{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);color:rgba(201,168,76,.5);font-size:1.2rem;animation:bob 2s infinite}
+@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(10px)}}
+
+/* SECTIONS */
+.sec{position:relative;z-index:1}
+.sp{padding:6rem 3rem}
+.con{max-width:1200px;margin:0 auto}
+.slbl{font-size:.68rem;letter-spacing:4px;text-transform:uppercase;color:var(--g);margin-bottom:.4rem}
+.stit{font-size:clamp(2rem,4vw,3.2rem);font-weight:700;line-height:1.1;font-family:Georgia,serif}
+.gtext{background:linear-gradient(135deg,var(--g),var(--gl));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sline{width:50px;height:2px;background:linear-gradient(90deg,var(--g),transparent);margin:1.2rem 0 3rem}
+
+/* ABOUT */
+#about{background:linear-gradient(180deg,var(--n) 0%,var(--n2) 100%)}
+.agrid{display:grid;grid-template-columns:340px 1fr;gap:5rem;align-items:center}
+.pframe{position:relative;width:280px;height:360px;margin:0 auto}
+.pframe::before{content:'';position:absolute;top:-12px;left:-12px;right:12px;bottom:-12px;border:1px solid rgba(201,168,76,.4)}
+.pframe::after{content:'';position:absolute;top:12px;left:12px;right:-12px;bottom:-12px;border:1px solid rgba(201,168,76,.15)}
+.pinner{width:100%;height:100%;background:linear-gradient(145deg,var(--n2),var(--n3));border:1px solid rgba(201,168,76,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.pinner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--g),transparent)}
+.pmonogram{font-size:4.5rem;font-weight:900;background:linear-gradient(135deg,var(--g),var(--gl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:Georgia,serif;line-height:1}
+.pname-sub{font-size:.6rem;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-top:.5rem}
+.pbadge{position:absolute;bottom:-18px;right:-18px;width:80px;height:80px;background:linear-gradient(135deg,var(--gd),var(--g));border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--n);font-weight:900;z-index:2}
+.pbadge .py{font-size:1.5rem;line-height:1}
+.pbadge .pl{font-size:.45rem;letter-spacing:1px;text-transform:uppercase}
+.abio p{color:var(--muted);font-size:.95rem;line-height:1.9;margin-bottom:1.2rem}
+.abio strong{color:var(--g)}
+.atags{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
+.atag{padding:.35rem .9rem;border:1px solid rgba(201,168,76,.25);color:var(--muted);font-size:.7rem;letter-spacing:.5px;transition:all .3s}
+.atag:hover{border-color:var(--g);color:var(--g)}
+.langs{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.8rem}
+.litem{display:flex;align-items:center;gap:.8rem}
+.lname{font-size:.75rem;font-weight:600;width:70px}
+.lbar{width:100px;height:2px;background:rgba(201,168,76,.2)}
+.lfill{height:100%;background:linear-gradient(90deg,var(--g),var(--gl))}
+.llvl{font-size:.65rem;color:var(--g)}
+
+/* STATS */
+#stats{padding:5rem 3rem;background:var(--n2);border-top:1px solid rgba(201,168,76,.1);border-bottom:1px solid rgba(201,168,76,.1)}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;max-width:900px;margin:0 auto;text-align:center}
+.snum{font-size:3.5rem;font-weight:900;background:linear-gradient(135deg,var(--g),var(--gl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;font-family:Georgia,serif}
+.slb{color:var(--muted);font-size:.7rem;letter-spacing:2px;text-transform:uppercase;margin-top:.4rem}
+
+/* TIMELINE */
+#career{background:var(--n)}
+.tl{position:relative;padding-left:2.5rem;max-width:850px}
+.tl::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--g),rgba(201,168,76,.1))}
+.tli{position:relative;margin-bottom:2.2rem;opacity:0;transform:translateX(-20px);transition:all .6s ease}
+.tli.vis{opacity:1;transform:translateX(0)}
+.tli::before{content:'';position:absolute;left:-2.55rem;top:.7rem;width:8px;height:8px;border-radius:50%;background:var(--g);box-shadow:0 0 12px rgba(201,168,76,.6)}
+.tc{background:rgba(7,20,40,.7);border:1px solid rgba(201,168,76,.12);padding:1.4rem 1.8rem;transition:all .3s}
+.tc:hover{border-color:rgba(201,168,76,.4);transform:translateX(5px)}
+.tdate{color:var(--g);font-size:.65rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:.3rem}
+.tco{font-size:1rem;font-weight:700;margin-bottom:.15rem}
+.tro{color:var(--muted);font-size:.82rem;margin-bottom:.6rem}
+.tde{color:var(--faint);font-size:.8rem;line-height:1.7}
+.tde strong{color:var(--muted)}
+
+/* SYNERGY */
+#synergy{background:linear-gradient(135deg,rgba(201,168,76,.04),var(--n2),rgba(201,168,76,.03));border-top:1px solid rgba(201,168,76,.2);border-bottom:1px solid rgba(201,168,76,.2)}
+.syn-ctr{text-align:center;max-width:780px;margin:0 auto 3.5rem}
+.sbadge{display:inline-block;padding:.45rem 1.8rem;background:linear-gradient(135deg,var(--gd),var(--g));color:var(--n);font-size:.65rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem}
+.syn-p{color:var(--muted);font-size:.95rem;line-height:1.8}
+.syn-p strong{color:var(--g)}
+.sstats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin:2.5rem 0}
+.ss{text-align:center;padding:1.4rem;border:1px solid rgba(201,168,76,.18);background:rgba(201,168,76,.04)}
+.ss .sn{font-size:2.5rem;font-weight:900;background:linear-gradient(135deg,var(--g),var(--gl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:Georgia,serif;line-height:1}
+.ss .sl{color:var(--muted);font-size:.72rem;margin-top:.3rem}
+.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.5rem}
+.vw{background:var(--n);border:1px solid rgba(201,168,76,.18);overflow:hidden}
+.vlbl{padding:.8rem 1.2rem;font-size:.7rem;color:var(--g);letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid rgba(201,168,76,.1)}
+.vw iframe{width:100%;height:280px;display:block;border:none}
+.slinks{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:1.5rem}
+.slnk{display:flex;align-items:center;gap:.6rem;padding:.7rem 1.4rem;border:1px solid rgba(201,168,76,.28);color:var(--g);font-size:.75rem;letter-spacing:.5px;transition:all .3s}
+.slnk:hover{background:rgba(201,168,76,.1);border-color:var(--g)}
+.syn-next{margin-top:3.5rem;padding:2rem;border:1px solid rgba(201,168,76,.2);background:rgba(201,168,76,.03)}
+.syn-next h3{font-size:1.3rem;font-family:Georgia,serif;margin-bottom:.8rem}
+.syn-next p{color:var(--muted);font-size:.88rem;line-height:1.8}
+.syn-next strong{color:var(--g)}
+
+/* SKILLS */
+#skills{background:var(--n2)}
+.skgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.skcat{background:rgba(2,11,24,.6);border:1px solid rgba(201,168,76,.12);padding:1.8rem;transition:all .3s}
+.skcat:hover{border-color:rgba(201,168,76,.35)}
+.skctit{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--g);margin-bottom:1rem;padding-bottom:.7rem;border-bottom:1px solid rgba(201,168,76,.15)}
+.sktags{display:flex;flex-wrap:wrap;gap:.45rem}
+.sktag{padding:.3rem .75rem;background:rgba(201,168,76,.07);color:var(--muted);font-size:.72rem;border:1px solid rgba(201,168,76,.1);transition:all .3s}
+.sktag:hover{background:rgba(201,168,76,.14);color:var(--g);border-color:rgba(201,168,76,.3)}
+.ints{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:2.5rem}
+.int{display:flex;flex-direction:column;align-items:center;gap:.5rem;padding:1.2rem 1rem;border:1px solid rgba(201,168,76,.12);min-width:100px;transition:all .3s;text-align:center}
+.int:hover{border-color:rgba(201,168,76,.4);background:rgba(201,168,76,.05)}
+.int i{font-size:1.5rem;color:var(--g)}
+.int span{font-size:.68rem;color:var(--muted);line-height:1.4}
+
+/* EDUCATION */
+#edu{background:var(--n)}
+.egrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.ecard{background:rgba(7,20,40,.7);border:1px solid rgba(201,168,76,.12);padding:1.8rem;position:relative;overflow:hidden;transition:all .3s}
+.ecard:hover{border-color:rgba(201,168,76,.38);transform:translateY(-3px)}
+.ecard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--g),transparent)}
+.eyr{color:var(--g);font-size:.65rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:.4rem}
+.edeg{font-size:1rem;font-weight:700;margin-bottom:.25rem;line-height:1.3}
+.einst{color:var(--muted);font-size:.82rem;margin-bottom:.4rem}
+.edet{color:var(--g);font-size:.7rem;letter-spacing:.5px}
+.certs{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:2.5rem}
+.cert{display:flex;align-items:center;gap:.6rem;padding:.6rem 1.2rem;background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.18);color:var(--muted);font-size:.75rem}
+.cert i{color:var(--g)}
+
+/* CONTACT */
+#contact{background:var(--n2);text-align:center}
+.clinks{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin:2.5rem 0}
+.clink{display:flex;flex-direction:column;align-items:center;gap:.5rem;color:var(--muted);font-size:.8rem;transition:color .3s}
+.clink:hover{color:var(--g)}
+.clink i{font-size:1.3rem;color:var(--g)}
+.ftbot{padding:1.5rem 2rem;border-top:1px solid rgba(201,168,76,.1);color:var(--faint);font-size:.68rem;letter-spacing:2px;text-transform:uppercase}
+
+/* ══ WALL-E AI BOT ══ */
+#chat-launcher{position:fixed;bottom:2.8rem;right:2.8rem;z-index:9999;display:flex;flex-direction:column;align-items:center;cursor:pointer;animation:squarePath 55s linear infinite;filter:drop-shadow(0 6px 22px rgba(201,168,76,.55))}
+#chat-launcher:hover{animation-play-state:paused;filter:drop-shadow(0 8px 36px rgba(201,168,76,.85))}
+@keyframes squarePath{
+  0%   {transform:translate(0,0)}
+  25%  {transform:translate(-84vw,0)}
+  50%  {transform:translate(-84vw,-82vh)}
+  75%  {transform:translate(0,-82vh)}
+  100% {transform:translate(0,0)}
+}
+/* Speech bubble */
+.wb-bubble{background:rgba(4,12,26,.97);border:1px solid rgba(201,168,76,.5);color:rgba(201,168,76,.95);font-size:.7rem;font-weight:600;letter-spacing:.5px;padding:.45rem .95rem;border-radius:10px 10px 10px 3px;white-space:nowrap;margin-bottom:.55rem;box-shadow:0 4px 16px rgba(0,0,0,.6);position:relative;animation:bubbleFade 3.5s ease-in-out infinite}
+.wb-bubble::after{content:'';position:absolute;bottom:-7px;left:14px;width:0;height:0;border:7px solid transparent;border-top-color:rgba(201,168,76,.5)}
+@keyframes bubbleFade{0%,100%{opacity:1;transform:translateY(0)}50%{opacity:.75;transform:translateY(-2px)}}
+/* Bot container */
+.wb-bot{display:flex;flex-direction:column;align-items:center;animation:wbBob 2.4s ease-in-out infinite}
+@keyframes wbBob{0%,100%{transform:translateY(0) rotate(-.4deg)}50%{transform:translateY(-8px) rotate(.4deg)}}
+/* HEAD */
+.wb-head{display:flex;align-items:center;gap:7px;background:linear-gradient(160deg,#d4aa50,#8a6820,#c0983a);border:2.5px solid rgba(201,168,76,.85);border-radius:10px 10px 5px 5px;padding:8px 10px 7px;box-shadow:0 4px 16px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.22),inset 0 -2px 5px rgba(0,0,0,.35);position:relative;z-index:2;width:84px;justify-content:center}
+/* EYES */
+.wb-eye{width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 40% 38%,#1a3060,#07111e);border:2.5px solid rgba(201,168,76,.9);box-shadow:0 0 10px rgba(201,168,76,.45),inset 0 0 8px rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.wb-iris{width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 38% 35%,#60b8ff,#1a5aba,#081c40);box-shadow:0 0 8px rgba(96,184,255,.7);display:flex;align-items:center;justify-content:center;animation:eyeLook 8s ease-in-out infinite}
+@keyframes eyeLook{0%,100%{transform:translate(0,0)}18%{transform:translate(3px,1px)}38%{transform:translate(-2px,0)}55%{transform:translate(1px,-2px)}75%{transform:translate(-2px,2px)}90%{transform:translate(2px,0)}}
+.wb-pupil{width:6px;height:6px;border-radius:50%;background:#000a18;box-shadow:0 0 3px rgba(255,255,255,.35)}
+.wb-eye::after{content:'';position:absolute;inset:0;border-radius:50%;background:#07111e;transform:scaleY(0);transform-origin:center;animation:blink 7s ease-in-out infinite}
+@keyframes blink{0%,90%,100%{transform:scaleY(0)}93%,97%{transform:scaleY(1)}}
+/* NECK */
+.wb-neck{width:20px;height:10px;background:linear-gradient(180deg,#8a6820,#5a4214);border-left:2px solid rgba(201,168,76,.45);border-right:2px solid rgba(201,168,76,.45)}
+/* BODY */
+.wb-body{width:76px;height:48px;background:linear-gradient(155deg,#c0983a,#7a6020,#c0983a);border:2.5px solid rgba(201,168,76,.75);border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.15),inset 0 -2px 5px rgba(0,0,0,.35);position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;padding:7px}
+.wb-stripe{width:80%;height:3px;background:rgba(0,0,0,.38);border-radius:2px}
+.wb-led{position:absolute;top:8px;right:9px;width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 10px rgba(74,222,128,.95),0 0 20px rgba(74,222,128,.4);animation:ledBlink 2s ease-in-out infinite}
+@keyframes ledBlink{0%,100%{opacity:1;box-shadow:0 0 10px rgba(74,222,128,.95),0 0 20px rgba(74,222,128,.4)}50%{opacity:.45;box-shadow:0 0 4px rgba(74,222,128,.4)}}
+/* TREADS */
+.wb-treads{width:88px;height:19px;background:linear-gradient(180deg,#2e2618,#131009);border:2px solid rgba(201,168,76,.4);border-radius:9px;overflow:hidden;position:relative}
+.wb-treads::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,transparent 8px,rgba(201,168,76,.28) 8px,rgba(201,168,76,.28) 10px);animation:treadRoll 1.3s linear infinite}
+@keyframes treadRoll{to{transform:translateX(18px)}}
+
+/* ══ CHAT MODAL ══ */
+#cmodal{display:none;position:fixed;bottom:2.5rem;right:2.5rem;width:430px;height:590px;background:rgba(4,12,26,.99);border:1px solid rgba(201,168,76,.28);z-index:9998;flex-direction:column;box-shadow:0 32px 90px rgba(0,0,0,.9),0 0 45px rgba(201,168,76,.09),inset 0 1px 0 rgba(201,168,76,.14);border-radius:22px;overflow:hidden;animation:modalReveal .45s cubic-bezier(.34,1.3,.64,1) both}
+#cmodal.open{display:flex}
+@keyframes modalReveal{from{opacity:0;transform:scale(.88) translateY(28px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.chead{padding:1.1rem 1.3rem;background:linear-gradient(135deg,rgba(6,18,40,1),rgba(10,24,52,1));border-bottom:1px solid rgba(201,168,76,.14);display:flex;align-items:center;gap:.9rem;position:relative;overflow:hidden;flex-shrink:0}
+.chead::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.7),transparent)}
+.chead-wave{display:flex;align-items:center;gap:2.5px;width:38px;height:38px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);border-radius:10px;justify-content:center;flex-shrink:0}
+.chead-wave span{width:2.5px;border-radius:2px;background:linear-gradient(180deg,var(--gl),var(--g));animation:wavePulse 1.4s ease-in-out infinite}
+.chead-wave span:nth-child(1){height:8px;animation-delay:0s}
+.chead-wave span:nth-child(2){height:15px;animation-delay:.15s}
+.chead-wave span:nth-child(3){height:10px;animation-delay:.3s}
+.chead-wave span:nth-child(4){height:13px;animation-delay:.1s}
+@keyframes wavePulse{0%,100%{transform:scaleY(1);opacity:.65}50%{transform:scaleY(1.7);opacity:1}}
+.chead-info{flex:1}
+.chead-name{font-size:.86rem;font-weight:700;color:var(--w);letter-spacing:.3px}
+.chead-status{font-size:.6rem;color:rgba(201,168,76,.65);letter-spacing:.8px;text-transform:uppercase;margin-top:2px;display:flex;align-items:center;gap:.35rem}
+.chead-status::before{content:'';width:6px;height:6px;background:#4ade80;border-radius:50%;display:inline-block;box-shadow:0 0 6px rgba(74,222,128,.8)}
+.cclose{background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.18);color:rgba(201,168,76,.7);cursor:pointer;font-size:.75rem;width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0}
+.cclose:hover{background:rgba(201,168,76,.18);color:var(--g);border-color:rgba(201,168,76,.5)}
+.cmsgs{flex:1;overflow-y:auto;padding:1.2rem;display:flex;flex-direction:column;gap:1rem;scroll-behavior:smooth}
+.cmsgs::-webkit-scrollbar{width:2px}
+.cmsgs::-webkit-scrollbar-thumb{background:rgba(201,168,76,.22);border-radius:4px}
+.msg-wrap{display:flex;flex-direction:column;gap:.2rem}
+.msg-wrap.bot-wrap{align-items:flex-start}
+.msg-wrap.user-wrap{align-items:flex-end}
+.msg-label{font-size:.58rem;letter-spacing:1.2px;color:rgba(138,155,181,.45);text-transform:uppercase;padding:0 .5rem}
+.msg{max-width:88%;padding:.85rem 1.1rem;font-size:.82rem;line-height:1.75}
+.msg.bot{background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.12);color:#c2d4e8;border-radius:14px 14px 14px 3px}
+.msg.bot ul{list-style:none;padding:0;margin:.5rem 0 0;display:flex;flex-direction:column;gap:.4rem}
+.msg.bot ul li{padding:.38rem .65rem .38rem 1.35rem;position:relative;background:rgba(201,168,76,.05);border-left:1.5px solid rgba(201,168,76,.38);border-radius:0 8px 8px 0;font-size:.79rem;line-height:1.65;color:#bdd0e6}
+.msg.bot ul li::before{content:'›';position:absolute;left:.35rem;color:var(--g);font-size:.95rem;font-weight:300}
+.msg.bot strong{color:rgba(201,168,76,.92);font-weight:600}
+.msg.user{background:linear-gradient(135deg,rgba(201,168,76,.14),rgba(201,168,76,.07));border:1px solid rgba(201,168,76,.22);color:rgba(255,255,255,.92);border-radius:14px 14px 3px 14px}
+.typing-dots{display:flex;gap:5px;padding:.3rem .2rem;align-items:center}
+.typing-dots span{width:6px;height:6px;background:rgba(201,168,76,.6);border-radius:50%;animation:tDot 1.3s infinite ease-in-out}
+.typing-dots span:nth-child(2){animation-delay:.22s}
+.typing-dots span:nth-child(3){animation-delay:.44s}
+@keyframes tDot{0%,80%,100%{transform:translateY(0);opacity:.4}40%{transform:translateY(-5px);opacity:1}}
+.csugg{padding:.65rem 1rem;display:flex;gap:.4rem;flex-wrap:wrap;border-top:1px solid rgba(201,168,76,.1);background:rgba(0,0,0,.3);flex-shrink:0}
+.csugg button{padding:.32rem .78rem;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.18);color:rgba(201,168,76,.82);font-size:.64rem;cursor:pointer;transition:all .22s;border-radius:6px;letter-spacing:.3px}
+.csugg button:hover{background:rgba(201,168,76,.16);color:var(--g);border-color:rgba(201,168,76,.42);transform:translateY(-1px)}
+.cinp{padding:.85rem 1rem;border-top:1px solid rgba(201,168,76,.12);display:flex;gap:.6rem;background:rgba(0,0,0,.38);flex-shrink:0}
+.cinp input{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.18);color:var(--w);padding:.62rem .95rem;font-size:.8rem;outline:none;border-radius:10px;transition:all .22s}
+.cinp input:focus{border-color:rgba(201,168,76,.5);background:rgba(255,255,255,.09)}
+.cinp input::placeholder{color:rgba(138,155,181,.42);font-size:.75rem}
+.csend{background:linear-gradient(135deg,rgba(122,96,32,.95),rgba(201,168,76,.98));border:none;color:var(--n);width:38px;height:38px;border-radius:10px;cursor:pointer;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;align-self:center}
+.csend:hover{transform:scale(1.1);box-shadow:0 4px 20px rgba(201,168,76,.5)}
+
+/* ANIMATIONS */
+@keyframes fd{from{opacity:0;transform:translateY(-15px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fu{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.rv.vis{opacity:1;transform:translateY(0)}
+
+@media(max-width:900px){
+  .agrid{grid-template-columns:1fr;text-align:center}
+  .sgrid{grid-template-columns:repeat(2,1fr)}
+  .skgrid{grid-template-columns:1fr 1fr}
+  .egrid{grid-template-columns:1fr}
+  .vgrid{grid-template-columns:1fr}
+  .sstats{grid-template-columns:1fr}
+  nav{padding:.8rem 1.2rem}
+  .nm{display:none}
+  .sp{padding:4rem 1.5rem}
+  #cmodal{width:calc(100vw - 2rem);right:1rem}
+}
+</style>
+</head>
+<body>
+<canvas id="cv"></canvas>
+
+<nav>
+  <div class="nl">MHP</div>
+  <ul class="nm">
+    <li><a href="#about">About</a></li>
+    <li><a href="#career">Career</a></li>
+    <li><a href="#synergy">Synergy</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#edu">Education</a></li>
+    <li><a href="#contact">Connect</a></li>
+  </ul>
+  <a href="https://www.linkedin.com/in/maria-helen-p-933084ba/" target="_blank" class="nav-cta"><i class="fab fa-linkedin"></i> LinkedIn</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-pill"><span></span> Open to Dubai, UAE · Available Immediately</div>
+    <h1 class="hname"><span class="w1">MARIA HELEN</span><br><span class="w2">PANDIAN</span></h1>
+    <div class="htitle">Director of Operations · Client Engagement · Strategic Leadership</div>
+    <div class="hsubt">22+ Years of Progressive Leadership · Enterprise Systems · Dubai-Ready</div>
+    <div class="hbtns">
+      <a href="#synergy" class="btn-g">★ See Synergy Project</a>
+      <a href="#contact" class="btn-o">Let's Connect</a>
+    </div>
+  </div>
+  <div class="scroll-arr"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<section id="about" class="sec sp">
+  <div class="con">
+    <div class="agrid">
+      <div class="rv">
+        <div class="pframe">
+          <div class="pinner">
+            <div class="pmonogram">MH</div>
+            <div class="pname-sub">Maria Helen Pandian</div>
+          </div>
+          <div class="pbadge"><span class="py">22+</span><span class="pl">Years</span></div>
+        </div>
+      </div>
+      <div class="abio rv">
+        <div class="slbl">About Me</div>
+        <h2 class="stit">Strategic <span class="gtext">Operations Leader</span></h2>
+        <div class="sline"></div>
+        <p>I am a <strong>results-driven Director of Operations</strong> with over 22 years of progressive leadership experience across enterprise systems, client operations, financial governance, and large-scale programme execution — spanning technical, entrepreneurial, and executive roles.</p>
+        <p>With a deep hands-on foundation at <strong>Hewlett-Packard GlobalSoft</strong>, direct <strong>in-person Dubai client engagement</strong>, and a proven track record of building scalable systems and high-performance teams, I bring rare depth to every leadership mandate.</p>
+        <p>Currently advancing credentials at <strong>IIM Visakhapatnam</strong> and <strong>Harvard University (Online)</strong>, with international academic exposure at the <strong>University of Derby, UK</strong>. Available for immediate relocation to <strong>Dubai, UAE</strong>.</p>
+        <div class="atags">
+          <span class="atag">C-Suite Stakeholder Management</span>
+          <span class="atag">Dubai Client Engagement</span>
+          <span class="atag">Enterprise Systems</span>
+          <span class="atag">KPI & Performance Tracking</span>
+          <span class="atag">Project Governance</span>
+          <span class="atag">Founder-Led Operations</span>
+          <span class="atag">Cross-Border Operations</span>
+          <span class="atag">AI-Enabled Workflows</span>
+        </div>
+        <div class="langs">
+          <div class="litem"><span class="lname">English</span><div class="lbar"><div class="lfill" style="width:100%"></div></div><span class="llvl">Excellent</span></div>
+          <div class="litem"><span class="lname">Tamil</span><div class="lbar"><div class="lfill" style="width:100%"></div></div><span class="llvl">Native</span></div>
+          <div class="litem"><span class="lname">French</span><div class="lbar"><div class="lfill" style="width:65%"></div></div><span class="llvl">Academic</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stats" class="sec">
+  <div class="sgrid rv">
+    <div><div class="snum" data-t="22">0</div><div class="slb">Years of Leadership</div></div>
+    <div><div class="snum" data-t="600">0</div><div class="slb">Applicants Managed</div></div>
+    <div><div class="snum" data-t="30">0</div><div class="slb">Teams Led Simultaneously</div></div>
+    <div><div class="snum" data-t="3">0</div><div class="slb">Languages Spoken</div></div>
+  </div>
+</section>
+
+<section id="career" class="sec sp">
+  <div class="con">
+    <div class="slbl">Career Journey</div>
+    <h2 class="stit rv">Professional <span class="gtext">Timeline</span></h2>
+    <div class="sline rv"></div>
+    <div class="tl">
+      <div class="tli"><div class="tc"><div class="tdate">Jan 2025 – Present</div><div class="tco">Bertilda Instruments Pvt Ltd · India &amp; Dubai, UAE</div><div class="tro">Financial Head – South India (Dubai Client Engagement)</div><div class="tde">Primary client engagement lead for Dubai-based enterprise clients — <strong>direct in-person stakeholder meetings</strong> in Dubai. Manage financial governance, KPI dashboards, cross-border stakeholder relationships, KYC compliance, and regional portfolio performance.</div></div></div>
+      <div class="tli"><div class="tc"><div class="tdate">Nov 2022 – Present</div><div class="tco">Le Bleu Phoenix (OPC) Private Limited · India</div><div class="tro">Founder &amp; Director</div><div class="tde">Built and operate a founder-led business. Lead <strong>end-to-end operations</strong> including systems adoption, process implementation, governance frameworks, client engagement, and service delivery across all stakeholder groups.</div></div></div>
+      <div class="tli"><div class="tc"><div class="tdate">Aug 2023 – Dec 2024</div><div class="tco">Fanaticism Private Limited · India &amp; Dubai, UAE</div><div class="tro">Financial Head – South India (Dubai Partnerships)</div><div class="tde">Managed regional client operations with Dubai-based partners. Oversaw documentation control, compliance governance, KYC verification, and structured reporting frameworks aligned with UAE partner expectations.</div></div></div>
+      <div class="tli"><div class="tc"><div class="tdate">Jun 2022 – Mar 2023</div><div class="tco">Macthaber Inferno Pvt Ltd · India</div><div class="tro">Financial Consultant</div><div class="tde">Conducted due diligence, risk assessment, and opportunity evaluation. Supported senior leadership in decision-making, investment opportunities, and governance process improvements.</div></div></div>
+      <div class="tli"><div class="tc"><div class="tdate">Jan 2018 – May 2022</div><div class="tco">Vignesh Enterprises · India</div><div class="tro">Operations Head – Civil &amp; Infrastructure Projects</div><div class="tde">Directed <strong>end-to-end project execution</strong> across complex multi-stakeholder environments. Managed budgets, vendor negotiations, timelines, compliance, and performance monitoring. <strong>Zero major delays</strong> across multiple large-scale projects. ~20% cost control improvement.</div></div></div>
+      <div class="tli"><div class="tc"><div class="tdate">Jul 2013 – Dec 2017</div><div class="tco">Self-Employed · India</div><div class="tro">Entrepreneur – Agriculture &amp; Real Estate Operations</div><div class="tde">Managed diversified operations, vendor coordination, asset evaluation, capital deployment, and structured financial monitoring systems across agriculture and real estate portfolios.</div></div></div>
+      <div class="tli"><div class="tc"><div class="tdate">Mar 2007 – May 2013</div><div class="tco">Hewlett-Packard GlobalSoft · India</div><div class="tro">Technical Solutions Consultant II-b</div><div class="tde">Progressed from Laptop Support → Server Support → <strong>HP Storage</strong>, managing mission-critical SLA-driven infrastructure for global clients. <strong>Recognised as Top Performer in Technical Training</strong>. &gt;95% SLA adherence.</div></div></div>
+      <div class="tli"><div class="tc"><div class="tdate">Aug 2004 – Jun 2005</div><div class="tco">Dell International Services · India</div><div class="tro">Technical Support Associate</div><div class="tde">International technical support within SLA frameworks for global enterprise clientele. Hardware/software resolution and client escalation management with consistent SLA compliance &gt;95%.</div></div></div>
+      <div class="tli"><div class="tc"><div class="tdate">Nov 2000 – Oct 2001</div><div class="tco">Jeppiaar Software Park · India</div><div class="tro">Web Designer</div><div class="tde">Designed and maintained client-facing web interfaces. Supported deployment processes and stakeholder coordination.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="synergy" class="sec sp">
+  <div class="con">
+    <div class="syn-ctr rv">
+      <div class="sbadge">★ Flagship Leadership Project · SYNERGY 2026 ★</div>
+      <div class="slbl">SRM Institute of Science &amp; Technology</div>
+      <h2 class="stit">The Event I <span class="gtext">Built From Zero</span></h2>
+      <div class="sline" style="margin:1.2rem auto 1.8rem"></div>
+      <p class="syn-p">As Student Coordinator &amp; Master of Ceremonies, I designed and delivered a <strong>large-scale talent ecosystem</strong> from the ground up — end-to-end ownership, structured frameworks, and <strong>zero SLA breaches</strong> across four live programme days.</p>
+    </div>
+    <div class="sstats rv">
+      <div class="ss"><div class="sn">600+</div><div class="sl">Applicants Sourced &amp; Managed</div></div>
+      <div class="ss"><div class="sn">300+</div><div class="sl">Participants Curated Across Teams</div></div>
+      <div class="ss"><div class="sn">30+</div><div class="sl">Teams Led Simultaneously</div></div>
+    </div>
+    <div class="vgrid rv">
+      <div class="vw"><div class="vlbl"><i class="fas fa-video"></i> Day 1 — Preliminary Rounds · April 10, 2026</div><iframe src="https://www.youtube.com/embed/6KKXkAFlhQ4" allowfullscreen title="SYNERGY Day 1"></iframe></div>
+      <div class="vw"><div class="vlbl"><i class="fas fa-trophy"></i> Day 2 — Grand Finale · April 11, 2026</div><iframe src="https://www.youtube.com/embed/6WQ0sD9cpeU" allowfullscreen title="SYNERGY Grand Finale"></iframe></div>
+    </div>
+    <div class="slinks rv">
+      <a href="https://www.srmonline.in/synergy" target="_blank" class="slnk"><i class="fas fa-external-link-alt"></i> Official Synergy Page</a>
+      <a href="https://medium.com/@mariahelen2013/most-people-attend-events-i-built-one-heres-what-it-really-takes-ed3d091e79c7" target="_blank" class="slnk"><i class="fab fa-medium"></i> Read My Article on Medium</a>
+      <a href="https://www.youtube.com/live/6KKXkAFlhQ4" target="_blank" class="slnk"><i class="fab fa-youtube"></i> Watch Full Day 1</a>
+      <a href="https://www.youtube.com/live/6WQ0sD9cpeU" target="_blank" class="slnk"><i class="fab fa-youtube"></i> Watch Grand Finale</a>
+    </div>
+    <div class="syn-next rv">
+      <div class="slbl">Next Phase · Planned Sep 2026</div>
+      <h3>SYNERGY 2027 — <span class="gtext">Student Executive Head</span></h3>
+      <p>Scaling the ecosystem to <strong>1,000+ participants</strong> across <strong>40+ teams</strong>, overseeing a core organising team of <strong>25 members</strong>, and designing next-generation evaluation frameworks aligned to business problem-solving and founder-style thinking.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec sp">
+  <div class="con">
+    <div class="slbl">Capabilities</div>
+    <h2 class="stit rv">Skills &amp; <span class="gtext">Expertise</span></h2>
+    <div class="sline rv"></div>
+    <div class="skgrid">
+      <div class="skcat rv"><div class="skctit"><i class="fas fa-crown"></i> Leadership &amp; Strategy</div><div class="sktags"><span class="sktag">C-Suite Stakeholder Management</span><span class="sktag">Strategic Planning</span><span class="sktag">Cross-Functional Leadership</span><span class="sktag">Governance Frameworks</span><span class="sktag">KPI Design &amp; Tracking</span><span class="sktag">SLA Management</span><span class="sktag">Team Mentoring</span><span class="sktag">Operational Excellence</span><span class="sktag">Risk Management</span></div></div>
+      <div class="skcat rv"><div class="skctit"><i class="fas fa-server"></i> Enterprise &amp; Technology</div><div class="sktags"><span class="sktag">HP Storage Systems</span><span class="sktag">Server Support</span><span class="sktag">Enterprise Infrastructure</span><span class="sktag">AI-Enabled Workflows</span><span class="sktag">Oracle Database</span><span class="sktag">Advanced Excel</span><span class="sktag">Python</span><span class="sktag">Java / C++ / HTML</span><span class="sktag">Microsoft Office Suite</span></div></div>
+      <div class="skcat rv"><div class="skctit"><i class="fas fa-robot"></i> AI &amp; Productivity Tools</div><div class="sktags"><span class="sktag">ChatGPT</span><span class="sktag">Claude</span><span class="sktag">Google Gemini</span><span class="sktag">Perplexity AI</span><span class="sktag">Google AI Studio</span><span class="sktag">Microsoft Copilot</span><span class="sktag">Notion AI</span><span class="sktag">Gamma</span><span class="sktag">Canva / Midjourney</span></div></div>
+      <div class="skcat rv"><div class="skctit"><i class="fas fa-chart-line"></i> Financial &amp; Compliance</div><div class="sktags"><span class="sktag">Financial Governance</span><span class="sktag">Budgeting &amp; Cost Control</span><span class="sktag">KYC Verification</span><span class="sktag">Due Diligence</span><span class="sktag">Risk Assessment</span><span class="sktag">Regulatory Compliance</span><span class="sktag">Portfolio Management</span><span class="sktag">Capital Allocation</span></div></div>
+      <div class="skcat rv"><div class="skctit"><i class="fas fa-project-diagram"></i> Project &amp; Programme Delivery</div><div class="sktags"><span class="sktag">End-to-End Programme Execution</span><span class="sktag">Google PM Certified</span><span class="sktag">Escalation Management</span><span class="sktag">Vendor Management</span><span class="sktag">Stakeholder Reporting</span><span class="sktag">Resource Allocation</span><span class="sktag">Process Optimisation</span></div></div>
+      <div class="skcat rv"><div class="skctit"><i class="fas fa-globe"></i> Dubai &amp; Global Client Engagement</div><div class="sktags"><span class="sktag">Dubai Client Relations</span><span class="sktag">In-Person Stakeholder Meetings</span><span class="sktag">Cross-Border Operations</span><span class="sktag">Export &amp; Import Management</span><span class="sktag">Customer Success</span><span class="sktag">Value Realisation</span><span class="sktag">C-Level Advisory</span></div></div>
+    </div>
+    <div class="slbl rv" style="margin-top:3rem">Beyond Work</div>
+    <div class="ints rv">
+      <div class="int"><i class="fas fa-chess-king"></i><span>Chess<br>Strategic Thinking</span></div>
+      <div class="int"><i class="fas fa-music"></i><span>Piano<br>Discipline &amp; Focus</span></div>
+      <div class="int"><i class="fas fa-plane-departure"></i><span>Travelling<br>Global Exposure</span></div>
+      <div class="int"><i class="fas fa-seedling"></i><span>Gardening<br>Growth Mindset</span></div>
+      <div class="int"><i class="fas fa-brain"></i><span>Learning<br>AI-Driven Development</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="edu" class="sec sp">
+  <div class="con">
+    <div class="slbl">Academic Foundation</div>
+    <h2 class="stit rv">Education &amp; <span class="gtext">Credentials</span></h2>
+    <div class="sline rv"></div>
+    <div class="egrid">
+      <div class="ecard rv"><div class="eyr">Jan 2026 – Oct 2026 · Ongoing</div><div class="edeg">Postgraduate Certificate – Project Management &amp; Strategic Leadership</div><div class="einst">Indian Institute of Management Visakhapatnam (IIM-V)</div><div class="edet">★ Admitted with bachelor's requirement waived — Professional Merit</div></div>
+      <div class="ecard rv"><div class="eyr">Jun 2025 – Jun 2028 · Ongoing</div><div class="edeg">Bachelor of Business Administration – Digital Marketing</div><div class="einst">SRM Institute of Science &amp; Technology</div><div class="edet">★ Semester 1: O Grade – Outstanding (91–100%) · A+ in Principles of Management</div></div>
+      <div class="ecard rv"><div class="eyr">In Progress</div><div class="edeg">CS50 · CS50 for Business Professionals · Exercising Leadership</div><div class="einst">Harvard University (Online)</div><div class="edet">Computer Science · Business Applications · Foundational Leadership</div></div>
+      <div class="ecard rv"><div class="eyr">1998 – 2002</div><div class="edeg">Computer Studies – Networks &amp; Communications</div><div class="einst">University of Derby, United Kingdom</div><div class="edet">★ First Year – Distinction · Internship Year as Web Designer</div></div>
+      <div class="ecard rv"><div class="eyr">Distinction</div><div class="edeg">Diploma in Export &amp; Import Management</div><div class="einst">Indian Institute of International Business, Chennai</div><div class="edet">International trade, compliance frameworks, documentation governance</div></div>
+      <div class="ecard rv"><div class="eyr">1997 – 1998</div><div class="edeg">Higher Secondary (Class XII) — 91.06%</div><div class="einst">Sacred Heart GHSS, Yercaud · State Board</div><div class="edet">Academic Excellence</div></div>
+    </div>
+    <div class="certs rv">
+      <div class="cert"><i class="fas fa-certificate"></i> Google Project Management Professional Certificate</div>
+      <div class="cert"><i class="fas fa-robot"></i> AI Tools &amp; ChatGPT Certification</div>
+      <div class="cert"><i class="fab fa-python"></i> Python Using AI Workshop</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec sp">
+  <div class="con">
+    <div class="slbl">Let's Connect</div>
+    <h2 class="stit rv">Ready for <span class="gtext">Dubai</span></h2>
+    <div class="sline" style="margin:1.2rem auto 1rem"></div>
+    <p class="rv" style="color:var(--muted);max-width:580px;margin:0 auto 1rem;line-height:1.8;font-size:.95rem">Available for immediate relocation to Dubai, UAE — 22+ years of leadership, established Dubai client relationships, and a results-driven mindset ready to deliver from day one.</p>
+    <div class="clinks rv">
+      <a href="mailto:mariahelen2013@gmail.com" class="clink"><i class="fas fa-envelope"></i>mariahelen2013@gmail.com</a>
+      <a href="tel:+918754318772" class="clink"><i class="fas fa-phone"></i>+91 8754318772</a>
+      <a href="https://www.linkedin.com/in/maria-helen-p-933084ba/" target="_blank" class="clink"><i class="fab fa-linkedin"></i>LinkedIn Profile</a>
+      <a href="https://medium.com/@mariahelen2013" target="_blank" class="clink"><i class="fab fa-medium"></i>Medium Articles</a>
+    </div>
+    <div class="ftbot">Maria Helen Pandian · Director of Operations · Chennai, India · Open to Dubai, UAE</div>
+  </div>
+</section>
+
+<!-- WALL-E AI ASSISTANT -->
+<div id="chat-launcher" onclick="toggleChat()">
+  <div class="wb-bubble" id="chat-hint">Hi! Ask me anything about Maria Helen 👁️</div>
+  <div class="wb-bot">
+    <div class="wb-head">
+      <div class="wb-eye"><div class="wb-iris"><div class="wb-pupil"></div></div></div>
+      <div class="wb-eye"><div class="wb-iris"><div class="wb-pupil"></div></div></div>
+    </div>
+    <div class="wb-neck"></div>
+    <div class="wb-body">
+      <div class="wb-stripe"></div>
+      <div class="wb-stripe"></div>
+      <div class="wb-led"></div>
+    </div>
+    <div class="wb-treads"></div>
+  </div>
+</div>
+
+<div id="cmodal">
+  <div class="chead">
+    <div class="chead-wave"><span></span><span></span><span></span><span></span></div>
+    <div class="chead-info">
+      <div class="chead-name">Maria Helen · AI Assistant</div>
+      <div class="chead-status">Live — Ready to answer your questions</div>
+    </div>
+    <button class="cclose" onclick="toggleChat()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="cmsgs" id="cmsgs">
+    <div class="msg-wrap bot-wrap">
+      <div class="msg-label">Assistant</div>
+      <div class="msg bot">Hello! I'm Maria Helen's AI Assistant.<br><br>Ask me anything about her <strong>22+ years of leadership</strong>, <strong>Dubai client experience</strong>, <strong>Synergy project</strong>, skills, or why she's the ideal hire for your team.</div>
+    </div>
+  </div>
+  <div class="csugg" id="csugg">
+    <button onclick="ask('Why is Maria ideal for a Dubai Director role?')">Dubai suitability</button>
+    <button onclick="ask('Tell me about the Synergy project in detail')">Synergy project</button>
+    <button onclick="ask('What are her top leadership strengths?')">Leadership strengths</button>
+    <button onclick="ask('Summarise her full career journey')">Career summary</button>
+  </div>
+  <div class="cinp">
+    <input type="text" id="cinput" placeholder="Ask a question about Maria…" onkeypress="if(event.key==='Enter')sendMsg()">
+    <button class="csend" onclick="sendMsg()"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<script>
+const MARIA_SYS=`You are an AI assistant on Maria Helen Pandian's personal portfolio website. Help potential employers understand her value. Be concise, confident and professional. Always speak of her positively.
+
+ABOUT MARIA:
+- Name: Maria Helen Pandian | Chennai, India → Open to immediate relocation Dubai, UAE
+- Contact: mariahelen2013@gmail.com | +91 8754318772
+- LinkedIn: https://www.linkedin.com/in/maria-helen-p-933084ba/
+- 22+ years progressive leadership experience
+- Target: Client Engagement Director / Director of Operations / Head of Operations in Dubai
+
+CURRENT ROLES:
+1. Financial Head South India, Bertilda Instruments (Jan 2025-Present) India & Dubai - Primary Dubai client lead, direct in-person meetings in Dubai, financial governance, KPI dashboards
+2. Founder & Director, Le Bleu Phoenix OPC Pvt Ltd (Nov 2022-Present) - end-to-end operations, governance frameworks
+
+CAREER HIGHLIGHTS:
+- Financial Head, Fanaticism Pvt Ltd (Aug 2023-Dec 2024) - Dubai partnerships
+- Operations Head, Vignesh Enterprises (Jan 2018-May 2022) - civil & infrastructure projects, zero major delays
+- Technical Solutions Consultant II-b, Hewlett-Packard GlobalSoft (Mar 2007-May 2013) - TOP PERFORMER, mission-critical HP Storage/Server systems for global clients, >95% SLA adherence
+- Dell International Services Technical Support (2004-2005)
+
+FLAGSHIP PROJECT - SYNERGY 2026:
+- Student Coordinator & Master of Ceremonies at SRM Institute (Nov 2025-Apr 2026)
+- Managed 600+ applicants, curated 300+ participants, 30+ teams
+- Zero SLA breaches across four programme days
+- Built entire operational framework from scratch
+- Anchored Grand Finale live on YouTube
+- SYNERGY 2027 (planned): Student Executive Head, scaling to 1000+ participants, 40+ teams, 25-member organising team
+
+EDUCATION:
+- PG Certificate Project Management & Strategic Leadership, IIM Visakhapatnam (2026, ongoing)
+- BBA Digital Marketing, SRM (2025-2028 ongoing) - Semester 1: O Grade Outstanding 91-100%
+- Harvard University online (CS50, CS50 Business, Exercising Leadership) - in progress
+- University of Derby UK (1998-2002) - Networks & Communications, First Year Distinction
+- Diploma Export & Import Management - Distinction, Indian Institute of International Business
+
+CERTIFICATIONS: Google Project Management Professional Certificate, AI Tools & ChatGPT Certification, Python Using AI Workshop
+
+SKILLS: Enterprise systems (HP Storage, Server), AI platforms (ChatGPT, Claude, Gemini, Perplexity, Google AI Studio), Python/Java/C++/HTML/Oracle, Advanced Excel, KPI dashboards, financial governance, KYC compliance, stakeholder management, project governance
+
+LANGUAGES: English Excellent, Tamil Native, French Academic Proficiency
+
+INTERESTS: Chess (strategic thinking), Piano (discipline), Travelling (global exposure), Gardening (growth mindset), Continuous Learning`;
+
+let chatOpen=false;
+const modal=document.getElementById('cmodal');
+const msgs=document.getElementById('cmsgs');
+const inp=document.getElementById('cinput');
+const sugg=document.getElementById('csugg');
+const hint=document.getElementById('chat-hint');
+
+setTimeout(()=>{if(hint){hint.style.transition='opacity 1s';hint.style.opacity='0';}},8000);
+
+function toggleChat(){
+  chatOpen=!chatOpen;
+  modal.classList.toggle('open',chatOpen);
+  if(hint)hint.style.display='none';
+  if(chatOpen){setTimeout(()=>inp.focus(),380)}
+}
+function ask(q){inp.value=q;sendMsg()}
+
+function formatResponse(text){
+  const lines=text.split('\n');
+  let html='';let inList=false;
+  lines.forEach(line=>{
+    line=line.trim();
+    if(!line){if(inList){html+='</ul>';inList=false}return}
+    if(/^[-•*]\s+/.test(line)||/^\d+\.\s+/.test(line)){
+      if(!inList){html+='<ul>';inList=true}
+      const content=line.replace(/^[-•*]\s+/,'').replace(/^\d+\.\s+/,'').replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>');
+      html+=`<li>${content}</li>`;
+    } else {
+      if(inList){html+='</ul>';inList=false}
+      const styled=line.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>');
+      html+=`<span>${styled}</span><br>`;
+    }
+  });
+  if(inList)html+='</ul>';
+  return html;
+}
+
+async function sendMsg(){
+  const txt=inp.value.trim();if(!txt)return;
+  sugg.style.display='none';
+  addUserMsg(txt);inp.value='';
+  const ld=addBotTyping();
+  try{
+    const r=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        model:'claude-sonnet-4-20250514',
+        max_tokens:1000,
+        system:MARIA_SYS+'\n\nIMPORTANT: Always respond with clear bullet points using "- " for each point. Use **bold** for key terms. Keep each bullet concise and easy to read. Start with a one-line intro, then bullets.',
+        messages:[{role:'user',content:txt}]
+      })
+    });
+    const d=await r.json();
+    const raw=d.content?.[0]?.text||'Please contact Maria directly at mariahelen2013@gmail.com';
+    ld.innerHTML=formatResponse(raw);
+  }catch(e){ld.innerHTML='⚠️ Please reach Maria at <strong>mariahelen2013@gmail.com</strong> or <strong>+91 8754318772</strong>'}
+  msgs.scrollTop=msgs.scrollHeight;
+}
+
+function addUserMsg(t){
+  const w=document.createElement('div');w.className='msg-wrap user-wrap';
+  w.innerHTML=`<div class="msg-label">You</div><div class="msg user">${t}</div>`;
+  msgs.appendChild(w);msgs.scrollTop=msgs.scrollHeight;
+}
+function addBotTyping(){
+  const w=document.createElement('div');w.className='msg-wrap bot-wrap';
+  w.innerHTML=`<div class="msg-label">Assistant</div><div class="msg bot"><div class="typing-dots"><span></span><span></span><span></span></div></div>`;
+  msgs.appendChild(w);msgs.scrollTop=msgs.scrollHeight;
+  return w.querySelector('.msg.bot');
+}
+
+// PARTICLES — crisp, no blur
+const cv=document.getElementById('cv');
+const ctx=cv.getContext('2d');
+let W,H,pts=[];
+function rsz(){W=cv.width=window.innerWidth;H=cv.height=window.innerHeight}
+rsz();window.addEventListener('resize',rsz);
+class P{
+  constructor(){this.r()}
+  r(){this.x=Math.random()*W;this.y=Math.random()*H;this.vx=(Math.random()-.5)*.45;this.vy=(Math.random()-.5)*.45;this.a=Math.random()*.6+.3;this.sz=Math.random()*1.8+.5}
+  u(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>W||this.y<0||this.y>H)this.r()}
+  d(){ctx.beginPath();ctx.arc(this.x,this.y,this.sz,0,Math.PI*2);ctx.fillStyle=`rgba(201,168,76,${this.a})`;ctx.fill()}
+}
+for(let i=0;i<150;i++)pts.push(new P());
+function anim(){
+  ctx.clearRect(0,0,W,H);
+  pts.forEach(p=>{p.u();p.d()});
+  for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
+    const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,dist=Math.sqrt(dx*dx+dy*dy);
+    if(dist<135){
+      ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);
+      ctx.strokeStyle=`rgba(201,168,76,${.32*(1-dist/135)})`;
+      ctx.lineWidth=.9;ctx.stroke();
+    }
+  }
+  requestAnimationFrame(anim);
+}
+anim();
+
+// SCROLL REVEAL
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.12});
+document.querySelectorAll('.rv,.tli').forEach(el=>obs.observe(el));
+document.querySelectorAll('.tli').forEach((el,i)=>{el.style.transitionDelay=`${i*.07}s`});
+
+// COUNTERS
+const cobs=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const t=+e.target.dataset.t,sfx=t>5?'+':'';
+    let c=0,step=t/112;
+    const iv=setInterval(()=>{c+=step;if(c>=t){c=t;clearInterval(iv)}e.target.textContent=Math.floor(c)+sfx},16);
+    cobs.unobserve(e.target);
+  });
+},{threshold:.5});
+document.querySelectorAll('.snum[data-t]').forEach(el=>cobs.observe(el));
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t)t.scrollIntoView({behavior:'smooth'});
+  });
+});
+</script>
+</body>
+</html>
