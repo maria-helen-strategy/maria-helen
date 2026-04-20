@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Maria Helen Pandian — Director of Operations</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --g:#C9A84C;--gl:#F0D485;--gd:#7A6020;
+  --n:#020B18;--n2:#071428;--n3:#0C1E38;
+  --w:#ffffff;--muted:#8A9BB5;--faint:#4A5A72;
+  --gold-line:rgba(201,168,76,.18);
+  --card:rgba(7,20,40,.78);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:var(--n);color:var(--w);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+#cv{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:64px;background:linear-gradient(180deg,rgba(1,5,16,.99) 0%,rgba(2,10,24,.97) 100%);border-bottom:1px solid rgba(201,168,76,.2);box-shadow:0 2px 40px rgba(0,0,0,.75)}
+nav::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.35),transparent)}
+nav::after{content:'';position:absolute;bottom:0;left:-100%;right:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.9),rgba(240,212,133,1),rgba(201,168,76,.9),transparent);animation:navScan 3.5s ease-in-out infinite}
+@keyframes navScan{0%{left:-100%;right:100%}50%{left:0%;right:0%}100%{left:100%;right:-100%}}
+.nl{position:relative;font-size:1.15rem;font-weight:900;background:linear-gradient(135deg,var(--g),var(--gl),var(--g));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:5px;background-size:200% auto;animation:shimmer 4s linear infinite;padding:.32rem .85rem;border:1px solid rgba(201,168,76,.28);border-radius:3px}
+.nl::after{content:'';position:absolute;inset:-1px;border-radius:3px;background:linear-gradient(135deg,rgba(201,168,76,.12),transparent,rgba(201,168,76,.08));pointer-events:none}
+.nm{display:flex;gap:0;list-style:none;height:100%}
+.nm li{height:100%;display:flex;align-items:center;position:relative}
+.nm a{position:relative;display:flex;align-items:center;height:100%;padding:0 1.1rem;font-size:.63rem;letter-spacing:2.2px;text-transform:uppercase;color:rgba(255,255,255,.42);transition:color .35s;font-weight:700;overflow:hidden}
+.nm a .nav-txt{position:relative;z-index:1;transition:transform .3s ease,letter-spacing .3s ease}
+.nm a::before{content:'';position:absolute;bottom:0;left:0;right:0;height:0;background:linear-gradient(0deg,rgba(201,168,76,.1),transparent);transition:height .35s ease}
+.nm a::after{content:'';position:absolute;bottom:0;left:50%;width:0;height:2px;background:linear-gradient(90deg,transparent,var(--g),var(--gl),var(--g),transparent);transition:width .38s cubic-bezier(.34,1.4,.64,1),left .38s cubic-bezier(.34,1.4,.64,1);border-radius:1px}
+.nm a:hover{color:rgba(240,212,133,.95)}
+.nm a:hover::before{height:100%}
+.nm a:hover::after{width:100%;left:0}
+.nm a:hover .nav-txt{letter-spacing:2.8px}
+.nm li::before{content:'';position:absolute;left:0;top:20%;height:60%;width:1px;background:linear-gradient(180deg,transparent,rgba(201,168,76,.15),transparent)}
+.nav-num{font-size:.46rem;color:rgba(201,168,76,.38);letter-spacing:1px;font-weight:800;margin-right:.32rem;transition:color .3s,transform .3s;display:inline-block;vertical-align:middle;line-height:1}
+.nm a:hover .nav-num{color:rgba(201,168,76,.82);transform:translateY(-1px)}
+.nav-char{display:inline-block;transition:color .2s ease,transform .2s ease,text-shadow .2s ease}
+.nm a.auto-active .nav-char{color:rgba(240,212,133,.94)!important;text-shadow:0 0 14px rgba(201,168,76,.6),0 0 30px rgba(201,168,76,.25)!important}
+.nm a.auto-active .nav-num{color:rgba(201,168,76,.82)!important;transform:translateY(-1px)!important}
+.nm a:hover .nav-char{color:rgba(240,212,133,.98);text-shadow:0 0 14px rgba(201,168,76,.65),0 0 28px rgba(201,168,76,.25)}
+@keyframes charRise{0%{transform:translateY(0) scaleY(1)}30%{transform:translateY(-6px) scaleY(1.1)}65%{transform:translateY(-2px) scaleY(.95)}100%{transform:translateY(0) scaleY(1)}}
+.nav-sep{width:1px;height:26px;background:linear-gradient(180deg,transparent,rgba(201,168,76,.28),transparent);margin:0 .6rem;flex-shrink:0}
+.nav-cta{display:flex;align-items:center;gap:.5rem;padding:.46rem 1.2rem;background:linear-gradient(135deg,rgba(201,168,76,.14),rgba(201,168,76,.06));border:1px solid rgba(201,168,76,.42);color:var(--g);font-size:.65rem;letter-spacing:2px;text-transform:uppercase;transition:all .35s;cursor:pointer;border-radius:3px;font-weight:800;position:relative;overflow:hidden}
+.nav-cta::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,168,76,.25),transparent);opacity:0;transition:opacity .3s}
+.nav-cta:hover{border-color:rgba(201,168,76,.75);color:var(--gl);box-shadow:0 0 24px rgba(201,168,76,.2)}
+.nav-cta:hover::before{opacity:1}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:8rem 2rem 4rem;position:relative;z-index:1;background:transparent}
+.hero-pill{display:inline-flex;align-items:center;gap:.7rem;padding:.4rem 1.3rem;border:1px solid rgba(201,168,76,.38);font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--g);margin-bottom:2rem;animation:fadeDown .9s ease both}
+.hero-pill-dot{width:6px;height:6px;background:var(--g);border-radius:50%;animation:glow 2s infinite}
+@keyframes glow{0%,100%{box-shadow:0 0 6px rgba(201,168,76,.8)}50%{box-shadow:0 0 14px rgba(201,168,76,.3)}}
+h1.hname{font-size:clamp(2.8rem,8.5vw,6.2rem);font-weight:900;line-height:.93;letter-spacing:-2px;margin-bottom:1.1rem;animation:fadeUp .9s ease .2s both;font-family:Georgia,serif}
+.hname .w1{color:var(--w)}
+.hname .w2{background:linear-gradient(135deg,var(--gd),var(--g),var(--gl),var(--g));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-size:300% auto;animation:shimmer 4s linear infinite}
+@keyframes shimmer{to{background-position:300% center}}
+.h-divider{display:flex;align-items:center;justify-content:center;gap:1.2rem;margin-bottom:.8rem;animation:fadeUp .9s ease .38s both}
+.h-divider span{width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--g))}
+.h-divider span:last-child{background:linear-gradient(90deg,var(--g),transparent)}
+.h-divider em{font-size:.6rem;letter-spacing:4px;text-transform:uppercase;color:var(--g);font-style:normal}
+.htitle{font-size:clamp(.88rem,1.8vw,1.05rem);color:var(--muted);letter-spacing:1.5px;margin-bottom:.6rem;animation:fadeUp .9s ease .45s both}
+.hsubt{font-size:clamp(.78rem,1.3vw,.95rem);color:rgba(201,168,76,.75);letter-spacing:1px;margin-bottom:3rem;animation:fadeUp .9s ease .55s both}
+.hbtns{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;animation:fadeUp .9s ease .65s both}
+.btn-gold{padding:.9rem 2.5rem;background:linear-gradient(135deg,var(--gd),var(--g));color:var(--n);font-size:.72rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;border:none;cursor:pointer;transition:all .3s;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(201,168,76,.38)}
+.btn-outline{padding:.9rem 2.5rem;background:transparent;color:var(--g);font-size:.72rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;border:1px solid rgba(201,168,76,.45);cursor:pointer;transition:all .3s}
+.btn-outline:hover{background:rgba(201,168,76,.09);transform:translateY(-3px)}
+.scroll-cue{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);color:rgba(201,168,76,.4);font-size:1.1rem;animation:bounce 2.2s infinite}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}55%{transform:translateX(-50%) translateY(10px)}}
+
+/* ── SHARED SECTION STYLES ── */
+.sec{position:relative;z-index:1}
+.sp{padding:6rem 3rem}
+.con{max-width:1200px;margin:0 auto}
+.sec-label{font-size:.62rem;letter-spacing:4.5px;text-transform:uppercase;color:var(--g);margin-bottom:.5rem}
+.sec-title{font-size:clamp(1.9rem,3.8vw,3rem);font-weight:700;line-height:1.1;font-family:Georgia,serif}
+.gold-text{background:linear-gradient(135deg,var(--g),var(--gl));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.gold-rule{width:52px;height:2px;background:linear-gradient(90deg,var(--g),transparent);margin:1.3rem 0 3rem}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rv.vis{opacity:1;transform:translateY(0)}
+
+/* ── ABOUT ── */
+#about{background:linear-gradient(180deg,var(--n) 0%,var(--n2) 100%)}
+.about-grid{display:grid;grid-template-columns:300px 1fr;gap:5rem;align-items:start}
+.about-grid{display:grid;grid-template-columns:360px 1fr;gap:5rem;align-items:start}
+.profile-frame{position:relative;width:310px;height:420px;margin:0 auto}
+.profile-frame::before{content:'';position:absolute;top:-14px;left:-14px;right:14px;bottom:-14px;border:1px solid rgba(201,168,76,.45)}
+.profile-frame::after{content:'';position:absolute;top:14px;left:14px;right:-14px;bottom:14px;border:1px solid rgba(201,168,76,.15)}
+.profile-inner{width:100%;height:100%;background:linear-gradient(145deg,var(--n2),var(--n3));border:2px solid rgba(201,168,76,.32);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.7),0 0 40px rgba(201,168,76,.08),inset 0 0 30px rgba(0,0,0,.3)}
+.profile-inner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--g),var(--gl),var(--g),transparent);z-index:2;animation:shimmer 4s linear infinite;background-size:200% auto}
+.profile-inner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(0deg,rgba(2,11,24,.65),transparent);z-index:1;pointer-events:none}
+.profile-photo{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .7s ease}
+.profile-frame:hover .profile-photo{transform:scale(1.04)}
+.profile-name-overlay{position:absolute;bottom:0;left:0;right:0;z-index:3;padding:1.2rem 1rem .9rem;text-align:center}
+.profile-overlay-name{font-size:.72rem;letter-spacing:3px;text-transform:uppercase;color:rgba(240,212,133,.9);font-weight:700;text-shadow:0 2px 8px rgba(0,0,0,.8)}
+.profile-overlay-title{font-size:.6rem;letter-spacing:2px;text-transform:uppercase;color:rgba(201,168,76,.65);margin-top:.2rem;text-shadow:0 2px 8px rgba(0,0,0,.8)}
+.profile-fallback{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}
+.profile-mono{font-size:4.2rem;font-weight:900;background:linear-gradient(135deg,var(--g),var(--gl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:Georgia,serif;line-height:1}
+.profile-sub{font-size:.55rem;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-top:.5rem}
+.profile-badge{position:absolute;bottom:-16px;right:-16px;width:76px;height:76px;background:linear-gradient(135deg,var(--gd),var(--g));border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--n);font-weight:900;z-index:2}
+.profile-badge .yr{font-size:1.45rem;line-height:1}
+.profile-badge .lb{font-size:.42rem;letter-spacing:1px;text-transform:uppercase}
+.about-body p{color:var(--muted);font-size:.92rem;line-height:1.95;margin-bottom:1.2rem}
+.about-body strong{color:rgba(201,168,76,.9)}
+/* AI Badge */
+.ai-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem 1rem;background:linear-gradient(135deg,rgba(201,168,76,.12),rgba(201,168,76,.05));border:1px solid rgba(201,168,76,.3);border-radius:3px;margin-bottom:1.3rem}
+.ai-badge i{color:var(--g);font-size:.85rem}
+.ai-badge span{font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--g);font-weight:700}
+.tags{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.6rem}
+.tag{padding:.32rem .88rem;border:1px solid rgba(201,168,76,.2);color:var(--muted);font-size:.68rem;letter-spacing:.4px;transition:all .3s;border-radius:2px}
+.tag:hover{border-color:var(--g);color:var(--g)}
+.tag.highlight{border-color:rgba(201,168,76,.35);color:rgba(201,168,76,.85);background:rgba(201,168,76,.06)}
+.langs{display:flex;gap:2rem;flex-wrap:wrap;margin-top:2rem}
+.lang-item{display:flex;align-items:center;gap:.9rem}
+.lang-name{font-size:.72rem;font-weight:600;width:72px;color:var(--w)}
+.lang-bar{width:96px;height:2px;background:rgba(201,168,76,.15)}
+.lang-fill{height:100%;background:linear-gradient(90deg,var(--g),var(--gl))}
+.lang-level{font-size:.62rem;color:var(--g)}
+
+/* ── STATS ── */
+#stats{padding:4.5rem 3rem;background:var(--n2);border-top:1px solid var(--gold-line);border-bottom:1px solid var(--gold-line)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;max-width:920px;margin:0 auto;text-align:center}
+.stat-num{font-size:5.8rem;font-weight:900;background:linear-gradient(135deg,var(--g),var(--gl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;font-family:Georgia,serif}
+.stat-label{color:var(--w);font-size:.95rem;letter-spacing:2px;text-transform:uppercase;margin-top:.7rem;font-weight:700}
+
+/* ── AI STRIP ── */
+#ai-strip{padding:3rem;background:linear-gradient(135deg,rgba(201,168,76,.06),rgba(7,20,40,.9),rgba(201,168,76,.04));border-bottom:1px solid var(--gold-line)}
+.ai-strip-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem}
+.ai-tool{display:flex;align-items:center;gap:.9rem;padding:1.1rem 1.3rem;background:var(--card);border:1px solid var(--gold-line);transition:all .3s}
+.ai-tool:hover{border-color:rgba(201,168,76,.38);transform:translateY(-2px)}
+.ai-tool i{font-size:1.4rem;color:var(--g);width:28px;text-align:center;flex-shrink:0}
+.ai-tool-info .ai-tool-name{font-size:.78rem;font-weight:700;margin-bottom:.15rem}
+.ai-tool-info .ai-tool-use{font-size:.65rem;color:var(--muted)}
+
+/* ── CAREER ── */
+#career{background:var(--n)}
+.tl{position:relative;padding-left:2.5rem;max-width:880px}
+.tl::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--g) 0%,rgba(201,168,76,.05) 100%)}
+.tli{position:relative;margin-bottom:2rem;opacity:0;transform:translateX(-18px);transition:all .6s ease}
+.tli.vis{opacity:1;transform:translateX(0)}
+.tli::before{content:'';position:absolute;left:-2.55rem;top:.75rem;width:8px;height:8px;border-radius:50%;background:var(--g);box-shadow:0 0 14px rgba(201,168,76,.65)}
+.tc{background:var(--card);border:1px solid var(--gold-line);padding:1.4rem 1.8rem;transition:all .3s;border-left:2px solid transparent}
+.tc:hover{border-left-color:var(--g);transform:translateX(4px)}
+.t-date{color:var(--g);font-size:.62rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:.3rem}
+.t-company{font-size:.98rem;font-weight:700;margin-bottom:.15rem;color:var(--w)}
+.t-role{color:var(--muted);font-size:.8rem;margin-bottom:.6rem}
+.t-desc{color:var(--faint);font-size:.78rem;line-height:1.75}
+.t-desc strong{color:var(--muted)}
+.t-ai{display:inline-flex;align-items:center;gap:.4rem;margin-top:.6rem;padding:.22rem .7rem;background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.2);font-size:.6rem;color:rgba(201,168,76,.8);letter-spacing:1px}
+.t-ai i{font-size:.6rem}
+
+/* ── SYNERGY ── */
+#synergy{background:var(--n2);border-top:1px solid var(--gold-line);border-bottom:1px solid var(--gold-line)}
+.syn-header{text-align:center;max-width:800px;margin:0 auto 3.5rem}
+.syn-badge{display:inline-block;padding:.45rem 2rem;background:linear-gradient(135deg,var(--gd),var(--g));color:var(--n);font-size:.62rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem}
+.syn-desc{color:var(--muted);font-size:.92rem;line-height:1.85}
+.syn-desc strong{color:var(--g)}
+.syn-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin:2.5rem 0}
+.syn-stat{text-align:center;padding:1.4rem;border:1px solid var(--gold-line);background:rgba(201,168,76,.04)}
+.syn-stat .sn{font-size:2.4rem;font-weight:900;background:linear-gradient(135deg,var(--g),var(--gl));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:Georgia,serif;line-height:1}
+.syn-stat .sl{color:var(--muted);font-size:.68rem;margin-top:.35rem}
+.vid-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.5rem}
+.vid-box{background:var(--n);border:1px solid var(--gold-line);overflow:hidden}
+.vid-label{padding:.75rem 1.2rem;font-size:.65rem;color:var(--g);letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid var(--gold-line)}
+.vid-box iframe{width:100%;height:270px;display:block;border:none}
+.syn-links{display:flex;gap:1.1rem;flex-wrap:wrap;margin-top:1.5rem}
+.syn-link{display:flex;align-items:center;gap:.55rem;padding:.65rem 1.3rem;border:1px solid rgba(201,168,76,.25);color:var(--g);font-size:.72rem;transition:all .3s}
+.syn-link:hover{background:rgba(201,168,76,.09);border-color:var(--g)}
+.syn-next{margin-top:3rem;padding:1.8rem 2rem;border:1px solid var(--gold-line);background:rgba(201,168,76,.04)}
+.syn-next h3{font-size:1.25rem;font-family:Georgia,serif;margin-bottom:.7rem}
+.syn-next p{color:var(--muted);font-size:.85rem;line-height:1.85}
+.syn-next strong{color:var(--g)}
+
+/* ── SKILLS ── */
+#skills{background:var(--n)}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.skill-card{background:var(--card);border:1px solid var(--gold-line);padding:1.7rem;transition:all .3s;position:relative;overflow:hidden}
+.skill-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--g),transparent);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.skill-card:hover::before{transform:scaleX(1)}
+.skill-card:hover{border-color:rgba(201,168,76,.32)}
+.skill-card.featured{border-color:rgba(201,168,76,.28);background:rgba(201,168,76,.05)}
+.skill-card.featured::before{transform:scaleX(1)}
+.skill-head{font-size:.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--g);margin-bottom:1rem;padding-bottom:.7rem;border-bottom:1px solid var(--gold-line);display:flex;align-items:center;gap:.5rem}
+.skill-tags{display:flex;flex-wrap:wrap;gap:.42rem}
+.s-tag{padding:.28rem .72rem;background:rgba(201,168,76,.06);color:var(--muted);font-size:.7rem;border:1px solid rgba(201,168,76,.1);transition:all .3s}
+.s-tag:hover{background:rgba(201,168,76,.14);color:var(--g);border-color:rgba(201,168,76,.28)}
+.s-tag.hot{background:rgba(201,168,76,.1);color:rgba(201,168,76,.88);border-color:rgba(201,168,76,.25)}
+.interests{display:flex;gap:1.1rem;flex-wrap:wrap;margin-top:2.5rem}
+.interest{display:flex;flex-direction:column;align-items:center;gap:.5rem;padding:1.1rem .9rem;border:1px solid var(--gold-line);min-width:95px;transition:all .3s;text-align:center;background:var(--card)}
+.interest:hover{border-color:rgba(201,168,76,.38);background:rgba(201,168,76,.06)}
+.interest i{font-size:1.4rem;color:var(--g)}
+.interest span{font-size:.65rem;color:var(--muted);line-height:1.4}
+
+/* ── EDUCATION ── */
+#edu{background:var(--n2)}
+.edu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem}
+.edu-card{background:var(--card);border:1px solid var(--gold-line);padding:1.7rem;position:relative;overflow:hidden;transition:all .3s}
+.edu-card:hover{border-color:rgba(201,168,76,.35);transform:translateY(-3px)}
+.edu-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--g),transparent)}
+.edu-year{color:var(--g);font-size:.62rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:.4rem}
+.edu-degree{font-size:.96rem;font-weight:700;margin-bottom:.25rem;line-height:1.35;color:var(--w)}
+.edu-inst{color:var(--muted);font-size:.8rem;margin-bottom:.4rem}
+.edu-note{color:rgba(201,168,76,.8);font-size:.68rem;letter-spacing:.4px}
+.certs-row{display:flex;gap:1.1rem;flex-wrap:wrap;margin-top:2.5rem}
+.cert-item{display:flex;align-items:center;gap:.55rem;padding:.55rem 1.1rem;background:rgba(201,168,76,.06);border:1px solid var(--gold-line);color:var(--muted);font-size:.72rem}
+.cert-item i{color:var(--g)}
+
+/* ── CONTACT ── */
+#contact{background:var(--n);text-align:center}
+.contact-links{display:flex;gap:2.5rem;justify-content:center;flex-wrap:wrap;margin:2.5rem 0}
+.c-link{display:flex;flex-direction:column;align-items:center;gap:.45rem;color:var(--muted);font-size:.78rem;transition:color .3s}
+.c-link:hover{color:var(--g)}
+.c-link i{font-size:1.25rem;color:var(--g)}
+.footer-bar{padding:1.5rem 2rem;border-top:1px solid var(--gold-line);color:var(--faint);font-size:.65rem;letter-spacing:2.5px;text-transform:uppercase}
+
+/* ── WALL-E (HALF SIZE) ── */
+#chat-launcher{position:fixed;bottom:2.8rem;right:2.8rem;z-index:9999;display:flex;flex-direction:column;align-items:center;cursor:pointer;animation:squarePath 60s linear infinite;filter:drop-shadow(0 4px 16px rgba(201,168,76,.5));transition:filter .3s}
+#chat-launcher:hover{animation-play-state:paused;filter:drop-shadow(0 6px 30px rgba(201,168,76,.88))}
+@keyframes squarePath{0%{transform:translate(0,0)}25%{transform:translate(-84vw,0)}50%{transform:translate(-84vw,-82vh)}75%{transform:translate(0,-82vh)}100%{transform:translate(0,0)}}
+.wb-bubble{background:rgba(2,11,24,.97);border:1px solid rgba(201,168,76,.55);color:rgba(201,168,76,.95);font-size:.55rem;font-weight:600;letter-spacing:.4px;padding:.28rem .72rem;border-radius:8px 8px 8px 2px;white-space:nowrap;margin-bottom:.4rem;box-shadow:0 3px 14px rgba(0,0,0,.6);position:relative;animation:bubFade 3.5s ease-in-out infinite}
+.wb-bubble::after{content:'';position:absolute;bottom:-6px;left:12px;width:0;height:0;border:6px solid transparent;border-top-color:rgba(201,168,76,.55)}
+@keyframes bubFade{0%,100%{opacity:1;transform:translateY(0)}50%{opacity:.75;transform:translateY(-1px)}}
+.wb-bot{display:flex;flex-direction:column;align-items:center;animation:wbBob 2.4s ease-in-out infinite}
+@keyframes wbBob{0%,100%{transform:translateY(0) rotate(-.4deg)}50%{transform:translateY(-4px) rotate(.4deg)}}
+.wb-head{display:flex;align-items:center;gap:4px;background:linear-gradient(160deg,#d4aa50,#8a6820,#c0983a);border:1.5px solid rgba(201,168,76,.85);border-radius:6px 6px 3px 3px;padding:4px 5px;box-shadow:0 3px 10px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.22);position:relative;z-index:2;width:44px;justify-content:center}
+.wb-eye{width:15px;height:15px;border-radius:50%;background:radial-gradient(circle at 40% 38%,#1a3060,#07111e);border:1.5px solid rgba(201,168,76,.9);box-shadow:0 0 7px rgba(201,168,76,.45);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.wb-iris{width:8px;height:8px;border-radius:50%;background:radial-gradient(circle at 38% 35%,#60b8ff,#1a5aba,#081c40);box-shadow:0 0 6px rgba(96,184,255,.7);display:flex;align-items:center;justify-content:center;animation:eyeLook 8s ease-in-out infinite}
+@keyframes eyeLook{0%,100%{transform:translate(0,0)}20%{transform:translate(2px,1px)}40%{transform:translate(-1px,0)}60%{transform:translate(1px,-1px)}80%{transform:translate(-1px,1px)}}
+.wb-pupil{width:3px;height:3px;border-radius:50%;background:#000a18}
+.wb-eye::after{content:'';position:absolute;inset:0;border-radius:50%;background:#07111e;transform:scaleY(0);transform-origin:center;animation:blink 7s ease-in-out infinite}
+@keyframes blink{0%,90%,100%{transform:scaleY(0)}93%,97%{transform:scaleY(1)}}
+.wb-neck{width:10px;height:5px;background:linear-gradient(180deg,#8a6820,#5a4214);border-left:1.5px solid rgba(201,168,76,.4);border-right:1.5px solid rgba(201,168,76,.4)}
+.wb-body{width:40px;height:26px;background:linear-gradient(155deg,#c0983a,#7a6020,#c0983a);border:1.5px solid rgba(201,168,76,.75);border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.15);position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:3px;padding:4px}
+.wb-stripe{width:80%;height:1.5px;background:rgba(0,0,0,.38);border-radius:1px}
+.wb-led{position:absolute;top:4px;right:5px;width:4px;height:4px;border-radius:50%;background:#4ade80;box-shadow:0 0 7px rgba(74,222,128,.95);animation:ledB 2s ease-in-out infinite}
+@keyframes ledB{0%,100%{opacity:1}50%{opacity:.4}}
+.wb-treads{width:48px;height:10px;background:linear-gradient(180deg,#2e2618,#131009);border:1.5px solid rgba(201,168,76,.4);border-radius:5px;overflow:hidden;position:relative}
+.wb-treads::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,transparent 4px,rgba(201,168,76,.3) 4px,rgba(201,168,76,.3) 5px);animation:treadRoll 1.3s linear infinite}
+@keyframes treadRoll{to{transform:translateX(9px)}}
+
+/* ── CHAT MODAL ── */
+#cmodal{display:none;position:fixed;bottom:2.5rem;right:2.5rem;width:430px;height:600px;background:rgba(2,11,24,.99);border:1px solid rgba(201,168,76,.22);z-index:9998;flex-direction:column;box-shadow:0 30px 80px rgba(0,0,0,.9),0 0 50px rgba(201,168,76,.07),inset 0 1px 0 rgba(201,168,76,.12);border-radius:18px;overflow:hidden;animation:modalIn .4s cubic-bezier(.34,1.3,.64,1) both}
+#cmodal.open{display:flex}
+@keyframes modalIn{from{opacity:0;transform:scale(.88) translateY(26px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.c-head{padding:1rem 1.2rem;background:linear-gradient(135deg,rgba(7,20,40,1),rgba(12,30,56,1));border-bottom:1px solid rgba(201,168,76,.12);display:flex;align-items:center;gap:.9rem;position:relative;flex-shrink:0}
+.c-head::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.65),transparent)}
+.c-head-icon{width:36px;height:36px;background:rgba(201,168,76,.09);border:1px solid rgba(201,168,76,.25);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.c-wave{display:flex;align-items:center;gap:2.5px}
+.c-wave span{width:2.5px;border-radius:2px;background:linear-gradient(180deg,var(--gl),var(--g));animation:wavePulse 1.4s ease-in-out infinite}
+.c-wave span:nth-child(1){height:7px}
+.c-wave span:nth-child(2){height:14px;animation-delay:.15s}
+.c-wave span:nth-child(3){height:9px;animation-delay:.3s}
+.c-wave span:nth-child(4){height:12px;animation-delay:.08s}
+@keyframes wavePulse{0%,100%{transform:scaleY(1);opacity:.6}50%{transform:scaleY(1.75);opacity:1}}
+.c-head-info{flex:1}
+.c-head-name{font-size:.82rem;font-weight:700;color:var(--w);letter-spacing:.2px}
+.c-head-status{font-size:.58rem;color:rgba(201,168,76,.6);letter-spacing:.8px;text-transform:uppercase;margin-top:2px;display:flex;align-items:center;gap:.35rem}
+.c-head-status::before{content:'';width:5px;height:5px;background:#4ade80;border-radius:50%;display:inline-block;box-shadow:0 0 6px rgba(74,222,128,.8)}
+.c-close{background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.14);color:rgba(201,168,76,.65);cursor:pointer;font-size:.72rem;width:26px;height:26px;border-radius:6px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0}
+.c-close:hover{background:rgba(201,168,76,.18);color:var(--g)}
+/* Quick Questions */
+.c-qs{padding:.6rem .9rem;border-bottom:1px solid rgba(201,168,76,.09);background:rgba(7,20,40,.5);flex-shrink:0;display:flex;gap:.35rem;flex-wrap:wrap}
+.c-q{padding:.26rem .65rem;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.14);color:rgba(201,168,76,.78);font-size:.6rem;cursor:pointer;transition:all .2s;border-radius:4px;letter-spacing:.2px;white-space:nowrap}
+.c-q:hover{background:rgba(201,168,76,.15);color:var(--g);border-color:rgba(201,168,76,.38)}
+/* Messages */
+.c-msgs{flex:1;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:.85rem;scroll-behavior:smooth}
+.c-msgs::-webkit-scrollbar{width:8px}
+.c-msgs::-webkit-scrollbar-track{background:rgba(7,20,40,.6);border-radius:4px}
+.c-msgs::-webkit-scrollbar-thumb{background:rgba(201,168,76,.55);border-radius:4px;border:1px solid rgba(201,168,76,.2)}
+.c-msgs::-webkit-scrollbar-thumb:hover{background:rgba(201,168,76,.82)}
+.m-wrap{display:flex;flex-direction:column;gap:.18rem}
+.m-wrap.bot{align-items:flex-start}
+.m-wrap.usr{align-items:flex-end}
+.m-label{font-size:.55rem;letter-spacing:1.2px;color:rgba(138,155,181,.4);text-transform:uppercase;padding:0 .4rem}
+.m-msg{max-width:90%;padding:.78rem 1rem;font-size:.79rem;line-height:1.74}
+.m-msg.bot{background:rgba(7,20,40,.65);border:1px solid rgba(201,168,76,.1);color:#c0d0e0;border-radius:12px 12px 12px 3px}
+.m-msg.bot ul{list-style:none;padding:0;margin:.45rem 0 0;display:flex;flex-direction:column;gap:.35rem}
+.m-msg.bot ul li{padding:.32rem .55rem .32rem 1.25rem;position:relative;background:rgba(201,168,76,.045);border-left:1.5px solid rgba(201,168,76,.32);border-radius:0 6px 6px 0;font-size:.76rem;line-height:1.62;color:#b5c8da}
+.m-msg.bot ul li::before{content:'›';position:absolute;left:.3rem;color:var(--g);font-size:.9rem;font-weight:300}
+.m-msg.bot strong{color:rgba(201,168,76,.9);font-weight:600}
+.m-msg.bot .section-head{display:block;margin:.5rem 0 .2rem;color:rgba(201,168,76,.85);font-size:.75rem;font-weight:700;border-bottom:1px solid rgba(201,168,76,.15);padding-bottom:.2rem}
+.m-msg.usr{background:linear-gradient(135deg,rgba(201,168,76,.13),rgba(201,168,76,.07));border:1px solid rgba(201,168,76,.18);color:rgba(255,255,255,.92);border-radius:12px 12px 3px 12px}
+.typing{display:flex;gap:4px;padding:.25rem .1rem;align-items:center}
+.typing span{width:5px;height:5px;background:rgba(201,168,76,.5);border-radius:50%;animation:tDot 1.3s infinite ease-in-out}
+.typing span:nth-child(2){animation-delay:.22s}
+.typing span:nth-child(3){animation-delay:.44s}
+@keyframes tDot{0%,80%,100%{transform:translateY(0);opacity:.35}40%{transform:translateY(-4px);opacity:1}}
+/* Input */
+.c-inp{padding:.72rem .9rem;border-top:1px solid rgba(201,168,76,.1);display:flex;gap:.5rem;background:rgba(7,20,40,.5);flex-shrink:0}
+.c-inp input{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.15);color:var(--w);padding:.55rem .88rem;font-size:.77rem;outline:none;border-radius:8px;transition:all .22s}
+.c-inp input:focus{border-color:rgba(201,168,76,.44);background:rgba(255,255,255,.08)}
+.c-inp input::placeholder{color:rgba(138,155,181,.38);font-size:.73rem}
+.c-send{background:linear-gradient(135deg,var(--gd),var(--g));border:none;color:var(--n);width:36px;height:36px;border-radius:8px;cursor:pointer;font-size:.8rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;align-self:center}
+.c-send:hover{transform:scale(1.1);box-shadow:0 4px 18px rgba(201,168,76,.45)}
+
+/* ANIMS */
+@keyframes fadeDown{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── PARTICLE NETWORK FULLY VISIBLE — ALL SECTIONS TRANSPARENT ── */
+#hero,#about,#career,#skills,#contact,#stats,#synergy,#edu,#ai-strip{background:transparent!important}
+/* Section separators for structure without colour blocks */
+.sec{border-bottom:1px solid rgba(201,168,76,.1)!important}
+#stats{border-top:1px solid rgba(201,168,76,.12)!important;border-bottom:1px solid rgba(201,168,76,.12)!important}
+#synergy{border-top:1px solid rgba(201,168,76,.12)!important;border-bottom:1px solid rgba(201,168,76,.12)!important}
+/* Stat items get a subtle card so numbers stay readable */
+.stats-grid>div{background:rgba(7,20,40,.55);border:1px solid rgba(201,168,76,.1);padding:1.8rem 1rem;border-radius:2px}
+
+/* ══ GLOBAL FONT SIZE UPLIFT ══ */
+body{font-size:17px}
+
+.sec-label{font-size:.88rem;letter-spacing:4px;font-weight:800;color:var(--g)}
+.sec-title{font-size:clamp(2.2rem,4.2vw,3.4rem);font-weight:700;line-height:1.1;font-family:Georgia,serif}
+.gold-rule{width:56px;height:2.5px}
+
+/* HERO */
+.hero-pill{font-size:.78rem;letter-spacing:3px}
+.htitle{font-size:clamp(1.1rem,2.4vw,1.3rem);letter-spacing:2px;font-weight:500;color:#a0afc0}
+.hsubt{font-size:clamp(1rem,1.8vw,1.2rem);color:rgba(201,168,76,.88);font-weight:500}
+.btn-gold,.btn-outline{font-size:.84rem;letter-spacing:2.2px;font-weight:800;padding:1rem 2.7rem}
+
+/* ABOUT */
+.about-body p{font-size:1.08rem;line-height:2.05;color:#a8b8cc}
+.about-body strong{font-size:1.08rem}
+.ai-badge span{font-size:.78rem;letter-spacing:2px;font-weight:800}
+.tag{font-size:.85rem;padding:.42rem 1.1rem;font-weight:600}
+.tag.highlight{font-size:.85rem}
+.lang-name{font-size:.85rem;font-weight:700;width:80px}
+.lang-level{font-size:.75rem;font-weight:700}
+
+/* STATS */
+.stat-num{font-size:6rem;font-weight:900}
+.stat-label{color:var(--w);font-size:1rem;letter-spacing:2px;text-transform:uppercase;margin-top:.7rem;font-weight:700}
+
+/* AI STRIP */
+.ai-tool-name{font-size:1.02rem;font-weight:800}
+.ai-tool-use{font-size:.88rem;color:#9aaabb;line-height:1.6}
+
+/* CAREER */
+.t-date{font-size:.78rem;letter-spacing:2.2px;font-weight:700}
+.t-company{font-size:1.18rem;font-weight:800}
+.t-role{font-size:1rem;font-weight:600;color:#9aaabb}
+.t-desc{font-size:.95rem;line-height:1.9;color:#8898aa}
+.t-desc strong{color:#b8cad2;font-weight:700}
+.t-ai{font-size:.74rem;font-weight:700;padding:.28rem .85rem}
+
+/* SYNERGY */
+.syn-badge{font-size:.75rem;letter-spacing:3px;font-weight:800}
+.syn-desc{font-size:1.08rem;line-height:1.95;color:#a8b8cc}
+.syn-stat .sn{font-size:3.2rem;font-weight:900}
+.syn-stat .sl{font-size:.92rem;font-weight:700;color:#9aaabb;margin-top:.5rem}
+.syn-next h3{font-size:1.5rem}
+.syn-next p{font-size:1rem;line-height:2;color:#a0b0c0}
+.syn-next strong{font-size:1rem}
+.syn-link{font-size:.84rem;font-weight:700;padding:.75rem 1.4rem}
+.vlbl{font-size:.78rem;letter-spacing:2px;font-weight:700}
+
+/* SKILLS */
+.skill-head{font-size:.82rem;letter-spacing:2.5px;font-weight:800}
+.s-tag{font-size:.84rem;padding:.4rem 1rem;font-weight:500}
+.s-tag.hot{font-size:.84rem;font-weight:700}
+.interest span{font-size:.8rem;font-weight:600;color:#9aaabb;line-height:1.5}
+
+/* EDUCATION */
+.edu-year{font-size:.76rem;letter-spacing:2px;font-weight:700}
+.edu-degree{font-size:1.12rem;font-weight:800;line-height:1.38}
+.edu-inst{font-size:.96rem;font-weight:500}
+.edu-note{font-size:.86rem;font-weight:700}
+.cert-item{font-size:.9rem;font-weight:600;padding:.6rem 1.2rem}
+
+/* CONTACT */
+.c-link{font-size:1rem;font-weight:600}
+.footer-bar{font-size:.76rem;letter-spacing:2.5px;font-weight:600;color:#6a7a8a}
+
+/* CHAT MODAL */
+.c-head-name{font-size:.92rem;font-weight:700}
+.c-head-status{font-size:.68rem;letter-spacing:.8px}
+.c-q{font-size:.7rem;padding:.32rem .82rem}
+.m-label{font-size:.64rem;letter-spacing:1.2px}
+.m-msg{font-size:.88rem;line-height:1.82;padding:.88rem 1.12rem}
+.m-msg.bot ul li{font-size:.85rem;line-height:1.7;padding:.4rem .65rem .4rem 1.4rem}
+.cinp input,.c-inp input{font-size:.86rem;padding:.65rem 1rem}
+
+/* TIMELINE */
+.tl::before{background:linear-gradient(180deg,var(--g) 0%,rgba(201,168,76,.05) 100%)}
+
+/* NAV */
+.nm a{font-size:.68rem;letter-spacing:2.2px}
+.nav-num{font-size:.52rem}
+.nav-cta{font-size:.72rem;letter-spacing:2px}
+
+/* SYNERGY LINKS */
+.slinks .slnk,.syn-links .syn-link{font-size:.86rem}
+
+@media(max-width:640px){
+  .about-grid{grid-template-columns:1fr;text-align:center}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .skills-grid{grid-template-columns:1fr 1fr}
+  .edu-grid{grid-template-columns:1fr}
+  .vid-grid{grid-template-columns:1fr}
+  .syn-stats{grid-template-columns:1fr}
+  .ai-strip-inner{grid-template-columns:1fr}
+  nav{padding:.6rem 1rem}
+  .nm{gap:.6rem}
+  .nm a{font-size:.56rem;letter-spacing:.7px}
+  .sp{padding:4rem 1.2rem}
+  #cmodal{width:calc(100vw - 2rem);right:1rem}
+}
+</style>
+</head>
+<body>
+<canvas id="cv"></canvas>
+
+<nav>
+  <div class="nl">MHP</div>
+  <ul class="nm">
+    <li><a href="#hero"><span class="nav-num">⌂</span><span class="nav-txt">Home</span></a></li>
+    <li><a href="#about"><span class="nav-num">01</span><span class="nav-txt">Profile</span></a></li>
+    <li><a href="#career"><span class="nav-num">02</span><span class="nav-txt">Career</span></a></li>
+    <li><a href="#synergy"><span class="nav-num">03</span><span class="nav-txt">Synergy</span></a></li>
+    <li><a href="#skills"><span class="nav-num">04</span><span class="nav-txt">Skills</span></a></li>
+    <li><a href="#edu"><span class="nav-num">05</span><span class="nav-txt">Education</span></a></li>
+    <li><a href="#contact"><span class="nav-num">06</span><span class="nav-txt">Contact</span></a></li>
+  </ul>
+  <div class="nav-sep"></div>
+  <a href="https://www.linkedin.com/in/maria-helen-p-933084ba/" target="_blank" class="nav-cta"><i class="fab fa-linkedin"></i>&nbsp; LinkedIn</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div>
+    <div class="hero-pill"><span class="hero-pill-dot"></span>AI-Driven Executive · Director of Operations · 22+ Years</div>
+    <h1 class="hname"><span class="w1">MARIA HELEN</span><br><span class="w2">PANDIAN</span></h1>
+    <div class="h-divider"><span></span><em>Strategic · AI-Driven · Global</em><span></span></div>
+    <div class="htitle">Director of Operations · Client Engagement · AI-Integrated Leadership</div>
+    <div class="hsubt">Enterprise Systems · Financial Governance · Cross-Border Operations · AI-Powered Decision-Making</div>
+    <div class="hbtns">
+      <a href="#synergy" class="btn-gold">★ Synergy Project</a>
+      <a href="#contact" class="btn-outline">Connect Now</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="sec sp">
+  <div class="con">
+    <div class="about-grid">
+      <div class="rv">
+        <div class="profile-frame">
+          <div class="profile-inner">
+            <img src="https://i.ibb.co/Kcc8ZhDg/Helen-Headshotphoto.png" alt="Maria Helen Pandian — Director of Operations"
+              class="profile-photo"
+              onerror="this.style.display='none';document.querySelector('.profile-fallback').style.display='flex'">
+            <div class="profile-fallback" style="display:none">
+              <div class="profile-mono">MH</div>
+              <div class="profile-sub">Maria Helen Pandian</div>
+            </div>
+            <div class="profile-name-overlay">
+              <div class="profile-overlay-name">Maria Helen Pandian</div>
+              <div class="profile-overlay-title">Director of Operations</div>
+            </div>
+          </div>
+          <div class="profile-badge"><span class="yr">22+</span><span class="lb">Years</span></div>
+        </div>
+      </div>
+      <div class="about-body rv">
+        <div class="sec-label">Executive Profile</div>
+        <h2 class="sec-title">Strategic <span class="gold-text">Operations Excellence Leader</span></h2>
+        <div class="gold-rule"></div>
+        <div class="ai-badge"><i class="fas fa-robot"></i><span>AI-Integrated Operations Leader</span></div>
+        <p>A <strong>results-driven Director of Operations</strong> with 22+ years of progressive executive leadership across enterprise systems, financial governance, client operations, and large-scale programme execution. Distinctive for integrating <strong>AI into daily operations</strong> — from automated KPI reporting and client governance to strategic analysis and presentation design.</p>
+        <p>Operationally fluent across the full modern AI ecosystem: <strong>Claude, ChatGPT, Google Gemini, Perplexity AI, Google AI Studio, Microsoft Copilot, Notion AI, and Midjourney</strong> — not as a trend-follower, but as a practitioner who embeds AI into governance workflows to deliver measurable efficiency gains for organisations.</p>
+        <p>Deep technical foundation at <strong>Hewlett-Packard GlobalSoft</strong>, in-person <strong>international client engagement</strong>, and a proven record of building scalable, zero-failure operational systems. Currently advancing credentials at <strong>IIM Visakhapatnam</strong> and <strong>Harvard University (Online)</strong> alongside active professional practice.</p>
+        <div class="tags">
+          <span class="tag highlight">AI-Native Operations</span>
+          <span class="tag highlight">C-Suite Leadership</span>
+          <span class="tag">Global Client Engagement</span>
+          <span class="tag">Enterprise Systems</span>
+          <span class="tag">Financial Governance</span>
+          <span class="tag">KPI Framework Design</span>
+          <span class="tag">Programme Execution</span>
+          <span class="tag">Cross-Border Operations</span>
+          <span class="tag">Founder & Director</span>
+          <span class="tag">AI Workflow Integration</span>
+        </div>
+        <div class="langs">
+          <div class="lang-item"><span class="lang-name">English</span><div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div><span class="lang-level">Excellent</span></div>
+          <div class="lang-item"><span class="lang-name">Tamil</span><div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div><span class="lang-level">Native</span></div>
+          <div class="lang-item"><span class="lang-name">French</span><div class="lang-bar"><div class="lang-fill" style="width:65%"></div></div><span class="lang-level">Academic</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stats-grid rv">
+    <div><div class="stat-num" data-t="22">0</div><div class="stat-label">Years of Leadership</div></div>
+    <div><div class="stat-num" data-t="600">0</div><div class="stat-label">Applicants Managed</div></div>
+    <div><div class="stat-num" data-t="30">0</div><div class="stat-label">Teams Led Concurrently</div></div>
+    <div><div class="stat-num" data-t="10">0</div><div class="stat-label">AI Platforms Mastered</div></div>
+  </div>
+</section>
+
+<!-- AI STRIP -->
+<section id="ai-strip">
+  <div class="ai-strip-inner">
+    <div class="ai-tool rv"><i class="fas fa-robot"></i><div class="ai-tool-info"><div class="ai-tool-name">Claude & ChatGPT</div><div class="ai-tool-use">Strategic analysis, governance drafting, client communication</div></div></div>
+    <div class="ai-tool rv"><i class="fas fa-chart-network" style="font-family:system-ui"><i class="fas fa-brain"></i></i><div class="ai-tool-info"><div class="ai-tool-name">Google Gemini & AI Studio</div><div class="ai-tool-use">Multimodal research, advanced model experimentation</div></div></div>
+    <div class="ai-tool rv"><i class="fas fa-microchip"></i><div class="ai-tool-info"><div class="ai-tool-name">Copilot · Perplexity · Notion AI</div><div class="ai-tool-use">Office automation, real-time research, knowledge management</div></div></div>
+    <div class="ai-tool rv"><i class="fab fa-python"></i><div class="ai-tool-info"><div class="ai-tool-name">Python (AI-Assisted Development)</div><div class="ai-tool-use">Automation scripts, data processing, management tools</div></div></div>
+    <div class="ai-tool rv"><i class="fas fa-palette"></i><div class="ai-tool-info"><div class="ai-tool-name">Gamma · Canva AI · Midjourney</div><div class="ai-tool-use">AI-powered presentations, visual content, brand assets</div></div></div>
+    <div class="ai-tool rv"><i class="fas fa-graduation-cap"></i><div class="ai-tool-info"><div class="ai-tool-name">Harvard CS50 (In Progress)</div><div class="ai-tool-use">Computer science fundamentals to deepen AI application literacy</div></div></div>
+  </div>
+</section>
+
+<!-- CAREER -->
+<section id="career" class="sec sp">
+  <div class="con">
+    <div class="sec-label">Career Journey</div>
+    <h2 class="sec-title rv">Professional <span class="gold-text">Timeline</span></h2>
+    <div class="gold-rule rv"></div>
+    <div class="tl">
+      <div class="tli"><div class="tc">
+        <div class="t-date">Jan 2025 – Present</div>
+        <div class="t-company">Bertilda Instruments Pvt Ltd · India &amp; International</div>
+        <div class="t-role">Financial Head – South India · Global Client Engagement</div>
+        <div class="t-desc">Primary engagement lead for enterprise clients including <strong>direct in-person international stakeholder meetings</strong>. Manages financial governance, KPI dashboards, cross-border relationships, and KYC compliance. <strong>Leverages Claude and ChatGPT</strong> to automate client reporting and compliance documentation workflows, reducing preparation time significantly.</div>
+        <span class="t-ai"><i class="fas fa-robot"></i> AI Tools: Claude · ChatGPT · Notion AI · Advanced Excel</span>
+      </div></div>
+      <div class="tli"><div class="tc">
+        <div class="t-date">Nov 2022 – Present</div>
+        <div class="t-company">Le Bleu Phoenix (OPC) Private Limited · India</div>
+        <div class="t-role">Founder &amp; Director</div>
+        <div class="t-desc">Built and operates a founder-led business with <strong>end-to-end operational ownership</strong>. Integrates <strong>AI-enabled tools across all workflows</strong> — Gamma for client presentations, Notion AI for documentation, Canva AI for visual assets, and Python scripts for operational automation. Full P&amp;L accountability, governance frameworks, and client service delivery.</div>
+        <span class="t-ai"><i class="fas fa-robot"></i> AI Tools: Gamma · Notion AI · Canva AI · Python · Midjourney</span>
+      </div></div>
+      <div class="tli"><div class="tc">
+        <div class="t-date">Nov 2025 – Apr 2026</div>
+        <div class="t-company">SRM Institute of Science &amp; Technology</div>
+        <div class="t-role">Student Coordinator &amp; Master of Ceremonies — SYNERGY 2026</div>
+        <div class="t-desc">Designed and delivered a <strong>600+ applicant programme from scratch</strong>. Managed 300+ participants, 30+ teams, four live programme days — <strong>zero SLA breaches</strong>. Used <strong>AI tools for research, scheduling, communication frameworks</strong>, and evaluation design. Anchored the Grand Finale live on YouTube.</div>
+        <span class="t-ai"><i class="fas fa-robot"></i> AI Tools: ChatGPT · Claude · Perplexity AI · Gamma</span>
+      </div></div>
+      <div class="tli"><div class="tc">
+        <div class="t-date">Aug 2023 – Dec 2024</div>
+        <div class="t-company">Fanaticism Private Limited · India &amp; International</div>
+        <div class="t-role">Financial Head – South India · Global Partnerships</div>
+        <div class="t-desc">Managed regional client operations with international partners. Oversaw documentation, compliance governance, KYC verification, and structured reporting. Deployed <strong>AI-assisted document generation and compliance checklists</strong> to streamline cross-border reporting.</div>
+        <span class="t-ai"><i class="fas fa-robot"></i> AI Tools: ChatGPT · Microsoft Copilot · Excel AI</span>
+      </div></div>
+      <div class="tli"><div class="tc">
+        <div class="t-date">Jan 2018 – May 2022</div>
+        <div class="t-company">Vignesh Enterprises · India</div>
+        <div class="t-role">Operations Head — Civil &amp; Infrastructure Projects</div>
+        <div class="t-desc">Directed <strong>end-to-end project execution</strong> across complex multi-stakeholder civil and infrastructure projects. <strong>Zero major delays, ~20% cost control improvement</strong>. Managed budgets, vendor negotiations, timelines, regulatory compliance, and performance monitoring across multiple concurrent projects.</div>
+      </div></div>
+      <div class="tli"><div class="tc">
+        <div class="t-date">Jul 2013 – Dec 2017</div>
+        <div class="t-company">Self-Employed · India</div>
+        <div class="t-role">Entrepreneur — Agriculture &amp; Real Estate Operations</div>
+        <div class="t-desc">Managed diversified business operations across agriculture and real estate portfolios — capital deployment, vendor coordination, asset evaluation, and structured financial monitoring systems across a 5-year independent entrepreneurial tenure.</div>
+      </div></div>
+      <div class="tli"><div class="tc">
+        <div class="t-date">Mar 2007 – May 2013</div>
+        <div class="t-company">Hewlett-Packard GlobalSoft · India</div>
+        <div class="t-role">Technical Solutions Consultant II-b</div>
+        <div class="t-desc">Progressed through three technical tiers: Laptop Support → Server Support → <strong>HP Enterprise Storage</strong>. Managed mission-critical SLA-bound infrastructure for global enterprise clients. <strong>Recognised as Top Performer in Technical Training</strong>. Coordinated with global teams across time zones. Maintained <strong>&gt;95% SLA adherence</strong> consistently throughout 6-year tenure.</div>
+      </div></div>
+      <div class="tli"><div class="tc">
+        <div class="t-date">Aug 2004 – Jun 2005</div>
+        <div class="t-company">Dell International Services · India</div>
+        <div class="t-role">Technical Support Associate</div>
+        <div class="t-desc">Delivered international technical support for global enterprise clientele within strict SLA frameworks. Maintained &gt;95% SLA compliance. Hardware/software diagnostics, client escalation management, and cross-functional team coordination.</div>
+      </div></div>
+      <div class="tli"><div class="tc">
+        <div class="t-date">Nov 2000 – Oct 2001</div>
+        <div class="t-company">Jeppiaar Software Park · India</div>
+        <div class="t-role">Web Designer</div>
+        <div class="t-desc">Designed and maintained client-facing web interfaces. Supported software deployment processes and stakeholder coordination — the beginning of a 22+ year technology and operations career.</div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SYNERGY -->
+<section id="synergy" class="sec sp">
+  <div class="con">
+    <div class="syn-header rv">
+      <div class="syn-badge">★ Flagship Leadership Project · SYNERGY 2026 ★</div>
+      <div class="sec-label" style="margin-top:1rem">SRM Institute of Science &amp; Technology</div>
+      <h2 class="sec-title" style="margin:.4rem 0 1.2rem">Built From <span class="gold-text">Zero — Executed Flawlessly</span></h2>
+      <p class="syn-desc">As Student Coordinator &amp; Master of Ceremonies, Maria designed and delivered a <strong>large-scale talent ecosystem from the ground up</strong> — end-to-end ownership, AI-assisted programme design, structured governance frameworks, and <strong>zero SLA breaches</strong> across four live programme days.</p>
+    </div>
+    <div class="syn-stats rv">
+      <div class="syn-stat"><div class="sn">600+</div><div class="sl">Applicants Sourced &amp; Managed</div></div>
+      <div class="syn-stat"><div class="sn">300+</div><div class="sl">Participants Curated</div></div>
+      <div class="syn-stat"><div class="sn">30+</div><div class="sl">Teams Led Simultaneously</div></div>
+    </div>
+    <div class="vid-grid rv">
+      <div class="vid-box"><div class="vid-label"><i class="fas fa-video"></i> Day 1 — Preliminary Rounds · April 10, 2026</div><iframe src="https://www.youtube.com/embed/6KKXkAFlhQ4" allowfullscreen title="SYNERGY Day 1"></iframe></div>
+      <div class="vid-box"><div class="vid-label"><i class="fas fa-trophy"></i> Day 2 — Grand Finale · April 11, 2026</div><iframe src="https://www.youtube.com/embed/6WQ0sD9cpeU" allowfullscreen title="SYNERGY Grand Finale"></iframe></div>
+    </div>
+    <div class="syn-links rv">
+      <a href="https://www.srmonline.in/synergy" target="_blank" class="syn-link"><i class="fas fa-external-link-alt"></i> Official Synergy Page</a>
+      <a href="https://medium.com/@mariahelen2013/most-people-attend-events-i-built-one-heres-what-it-really-takes-ed3d091e79c7" target="_blank" class="syn-link"><i class="fab fa-medium"></i> Read My Article</a>
+      <a href="https://www.youtube.com/live/6KKXkAFlhQ4" target="_blank" class="syn-link"><i class="fab fa-youtube"></i> Watch Day 1</a>
+      <a href="https://www.youtube.com/live/6WQ0sD9cpeU" target="_blank" class="syn-link"><i class="fab fa-youtube"></i> Watch Finale</a>
+    </div>
+    <div class="syn-next rv">
+      <div class="sec-label" style="margin-bottom:.5rem">Next Phase · Sep 2026</div>
+      <h3>SYNERGY 2027 — <span class="gold-text">Student Executive Head</span></h3>
+      <p>Scaling to <strong>1,000+ participants</strong> across <strong>40+ teams</strong>, leading a <strong>25-member organising committee</strong>, and designing AI-enhanced evaluation frameworks aligned to business problem-solving and founder-style thinking.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="sec sp">
+  <div class="con">
+    <div class="sec-label">Capabilities</div>
+    <h2 class="sec-title rv">Skills &amp; <span class="gold-text">Expertise</span></h2>
+    <div class="gold-rule rv"></div>
+    <div class="skills-grid">
+      <div class="skill-card featured rv">
+        <div class="skill-head"><i class="fas fa-robot"></i> AI Leadership &amp; Integration</div>
+        <div class="skill-tags">
+          <span class="s-tag hot">Claude (Anthropic)</span><span class="s-tag hot">ChatGPT / OpenAI</span><span class="s-tag hot">Google Gemini</span><span class="s-tag hot">Perplexity AI</span><span class="s-tag hot">Google AI Studio</span><span class="s-tag hot">Microsoft Copilot</span><span class="s-tag hot">Notion AI</span><span class="s-tag hot">Gamma</span><span class="s-tag hot">Midjourney</span><span class="s-tag hot">Canva AI</span><span class="s-tag">Python (AI-Assisted)</span><span class="s-tag">Prompt Engineering</span><span class="s-tag">AI Workflow Design</span>
+        </div>
+      </div>
+      <div class="skill-card rv">
+        <div class="skill-head"><i class="fas fa-crown"></i> Executive Leadership &amp; Strategy</div>
+        <div class="skill-tags">
+          <span class="s-tag">C-Suite Stakeholder Management</span><span class="s-tag">Strategic Planning</span><span class="s-tag">Cross-Functional Leadership</span><span class="s-tag">Governance Frameworks</span><span class="s-tag">KPI Design &amp; Tracking</span><span class="s-tag">SLA Management</span><span class="s-tag">Risk Management</span><span class="s-tag">Operational Excellence</span><span class="s-tag">Team Mentoring</span>
+        </div>
+      </div>
+      <div class="skill-card rv">
+        <div class="skill-head"><i class="fas fa-server"></i> Enterprise Technology</div>
+        <div class="skill-tags">
+          <span class="s-tag">HP Storage Systems</span><span class="s-tag">Server Infrastructure</span><span class="s-tag">Enterprise Architecture</span><span class="s-tag">Oracle Database</span><span class="s-tag">Advanced Excel</span><span class="s-tag">Python</span><span class="s-tag">Java · C++ · HTML</span><span class="s-tag">Microsoft Office Suite</span><span class="s-tag">Network Systems</span>
+        </div>
+      </div>
+      <div class="skill-card rv">
+        <div class="skill-head"><i class="fas fa-chart-line"></i> Financial &amp; Compliance</div>
+        <div class="skill-tags">
+          <span class="s-tag">Financial Governance</span><span class="s-tag">Budgeting &amp; Cost Control</span><span class="s-tag">KYC Verification</span><span class="s-tag">Due Diligence</span><span class="s-tag">Risk Assessment</span><span class="s-tag">Regulatory Compliance</span><span class="s-tag">Portfolio Management</span><span class="s-tag">Capital Allocation</span>
+        </div>
+      </div>
+      <div class="skill-card rv">
+        <div class="skill-head"><i class="fas fa-project-diagram"></i> Programme &amp; Project Delivery</div>
+        <div class="skill-tags">
+          <span class="s-tag">End-to-End Programme Execution</span><span class="s-tag">Google PM Certified</span><span class="s-tag">Escalation Management</span><span class="s-tag">Vendor Management</span><span class="s-tag">Stakeholder Reporting</span><span class="s-tag">Resource Allocation</span><span class="s-tag">Process Optimisation</span><span class="s-tag">AI-Assisted Planning</span>
+        </div>
+      </div>
+      <div class="skill-card rv">
+        <div class="skill-head"><i class="fas fa-globe"></i> Global Client Engagement</div>
+        <div class="skill-tags">
+          <span class="s-tag">International Client Relations</span><span class="s-tag">In-Person Stakeholder Meetings</span><span class="s-tag">Cross-Border Operations</span><span class="s-tag">Export &amp; Import Management</span><span class="s-tag">Customer Success</span><span class="s-tag">Value Realisation</span><span class="s-tag">C-Level Advisory</span>
+        </div>
+      </div>
+    </div>
+    <div class="sec-label rv" style="margin-top:3rem">Beyond Work</div>
+    <div class="interests rv">
+      <div class="interest"><i class="fas fa-chess-king"></i><span>Chess<br>Strategic Thinking</span></div>
+      <div class="interest"><i class="fas fa-music"></i><span>Piano<br>Precision &amp; Discipline</span></div>
+      <div class="interest"><i class="fas fa-plane-departure"></i><span>Travel<br>Global Perspective</span></div>
+      <div class="interest"><i class="fas fa-seedling"></i><span>Gardening<br>Growth Mindset</span></div>
+      <div class="interest"><i class="fas fa-robot"></i><span>AI Exploration<br>Continuous Learning</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="edu" class="sec sp">
+  <div class="con">
+    <div class="sec-label">Academic Foundation</div>
+    <h2 class="sec-title rv">Education &amp; <span class="gold-text">Credentials</span></h2>
+    <div class="gold-rule rv"></div>
+    <div class="edu-grid">
+      <div class="edu-card rv"><div class="edu-year">Jan 2026 – Oct 2026 · Ongoing</div><div class="edu-degree">Postgraduate Certificate — Project Management &amp; Strategic Leadership</div><div class="edu-inst">Indian Institute of Management Visakhapatnam (IIM-V)</div><div class="edu-note">★ Admitted with bachelor's requirement waived — Professional Merit Admission</div></div>
+      <div class="edu-card rv"><div class="edu-year">Jun 2025 – Jun 2028 · Ongoing</div><div class="edu-degree">Bachelor of Business Administration — Digital Marketing</div><div class="edu-inst">SRM Institute of Science &amp; Technology</div><div class="edu-note">★ Semester 1: O Grade Outstanding (91–100%) · A+ in Principles of Management</div></div>
+      <div class="edu-card rv"><div class="edu-year">In Progress · Harvard University Online</div><div class="edu-degree">CS50 · CS50 for Business Professionals · Exercising Leadership</div><div class="edu-inst">Harvard University — Online Division</div><div class="edu-note">Computer Science · AI Application · Business Leadership Frameworks</div></div>
+      <div class="edu-card rv"><div class="edu-year">1998 – 2002 · United Kingdom</div><div class="edu-degree">Computer Studies — Networks &amp; Communications</div><div class="edu-inst">University of Derby, United Kingdom</div><div class="edu-note">★ First Year — Distinction · Completed Web Designer Internship Year</div></div>
+      <div class="edu-card rv"><div class="edu-year">Distinction Grade</div><div class="edu-degree">Diploma in Export &amp; Import Management</div><div class="edu-inst">Indian Institute of International Business, Chennai</div><div class="edu-note">International trade compliance, documentation governance, cross-border frameworks</div></div>
+      <div class="edu-card rv"><div class="edu-year">1997 – 1998 · State Board</div><div class="edu-degree">Higher Secondary (Class XII) — 91.06%</div><div class="edu-inst">Sacred Heart GHSS, Yercaud</div><div class="edu-note">Academic Excellence · Foundation for a 22-year executive career</div></div>
+    </div>
+    <div class="certs-row rv">
+      <div class="cert-item" style="border-color:rgba(201,168,76,.55);background:rgba(201,168,76,.12);color:var(--w);position:relative;overflow:hidden">
+        <span style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--g),var(--gl),var(--g))"></span>
+        <i class="fas fa-certificate" style="color:var(--g);font-size:1.1rem"></i>
+        <div>
+          <div style="font-size:.92rem;font-weight:800;color:var(--w)">Google Project Management Professional Certificate</div>
+          <div style="font-size:.72rem;color:rgba(201,168,76,.85);letter-spacing:1.5px;margin-top:.25rem;font-weight:700">✓ COMPLETED · CERTIFIED</div>
+        </div>
+      </div>
+      <div class="cert-item"><i class="fas fa-robot"></i> AI Tools &amp; ChatGPT Certification</div>
+      <div class="cert-item"><i class="fab fa-python"></i> Python Using AI Workshop</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec sp">
+  <div class="con">
+    <div class="sec-label">Connect</div>
+    <h2 class="sec-title rv">Get in <span class="gold-text">Touch</span></h2>
+    <div class="gold-rule" style="margin:1.2rem auto 1rem"></div>
+    <p class="rv" style="color:var(--muted);max-width:600px;margin:0 auto 1.5rem;line-height:1.9;font-size:.92rem">22+ years of executive-level leadership, <strong style="color:rgba(201,168,76,.9)">AI-driven operations management</strong>, and a measurable record of zero-failure programme delivery — ready to create immediate organisational impact.</p>
+    <div class="contact-links rv">
+      <a href="mailto:mariahelen2013@gmail.com" class="c-link"><i class="fas fa-envelope"></i>mariahelen2013@gmail.com</a>
+      <a href="tel:+918754318772" class="c-link"><i class="fas fa-phone"></i>+91 8754318772</a>
+      <a href="https://www.linkedin.com/in/maria-helen-p-933084ba/" target="_blank" class="c-link"><i class="fab fa-linkedin"></i>LinkedIn Profile</a>
+      <a href="https://medium.com/@mariahelen2013" target="_blank" class="c-link"><i class="fab fa-medium"></i>Medium Articles</a>
+    </div>
+    <div class="footer-bar">Maria Helen Pandian · AI-Enabled Director of Operations · Chennai, India</div>
+  </div>
+</section>
+
+<!-- WALL-E -->
+<div id="chat-launcher" onclick="toggleChat()">
+  <div class="wb-bubble" id="wb-hint">Hi! Ask me anything about Maria Helen</div>
+  <div class="wb-bot">
+    <div class="wb-head">
+      <div class="wb-eye"><div class="wb-iris"><div class="wb-pupil"></div></div></div>
+      <div class="wb-eye"><div class="wb-iris"><div class="wb-pupil"></div></div></div>
+    </div>
+    <div class="wb-neck"></div>
+    <div class="wb-body"><div class="wb-stripe"></div><div class="wb-stripe"></div><div class="wb-led"></div></div>
+    <div class="wb-treads"></div>
+  </div>
+</div>
+
+<!-- CHAT MODAL -->
+<div id="cmodal">
+  <div class="c-head">
+    <div class="c-head-icon"><div class="c-wave"><span></span><span></span><span></span><span></span></div></div>
+    <div class="c-head-info">
+      <div class="c-head-name">Maria Helen · Portfolio Intelligence</div>
+      <div class="c-head-status">Live · Trained on full profile &amp; LinkedIn data</div>
+    </div>
+    <button class="c-close" onclick="toggleChat()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="c-qs" id="c-qs">
+    <button class="c-q" onclick="ask('Why should we hire Maria Helen?')">Why hire Maria?</button>
+    <button class="c-q" onclick="ask('What AI skills and tools does she use?')">AI expertise</button>
+    <button class="c-q" onclick="ask('Tell me about the Synergy project')">Synergy project</button>
+    <button class="c-q" onclick="ask('Walk me through her full career journey')">Career journey</button>
+    <button class="c-q" onclick="ask('What makes her C-suite ready?')">C-suite readiness</button>
+    <button class="c-q" onclick="ask('What is her education and academic record?')">Education</button>
+    <button class="c-q" onclick="ask('What are her top leadership achievements?')">Achievements</button>
+    <button class="c-q" onclick="ask('How can I contact Maria Helen?')">Contact</button>
+  </div>
+  <div class="c-msgs" id="c-msgs">
+    <div class="m-wrap bot">
+      <div class="m-label">Portfolio Assistant</div>
+      <div class="m-msg bot">Hello. I'm Maria Helen Pandian's intelligent portfolio assistant — trained on her complete professional profile, LinkedIn data, career history, AI expertise, and academic record.<br><br>Click any question above or type your own. I can answer anything about her profile with precision and detail.</div>
+    </div>
+  </div>
+  <div class="c-inp">
+    <input type="text" id="c-input" placeholder="Ask anything about Maria Helen…" onkeypress="if(event.key==='Enter')sendMsg()">
+    <button class="c-send" onclick="sendMsg()"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════════
+// INTELLIGENCE ENGINE — 28 INTENTS
+// Works fully standalone on GitHub Pages
+// ══════════════════════════════════════════
+const KB=[
+  {id:'greet',p:['hello','hi','hey','good morning','good afternoon','good evening','howdy','greetings','start','begin'],
+   r:()=>f(`Hello! I'm Maria Helen Pandian's portfolio intelligence assistant.
+
+I'm trained on her complete professional profile — here's what I can tell you about:
+
+- **22+ year executive leadership** trajectory across HP, Dell, and multiple director-level roles
+- **AI-Native Operations** — proficient in 10+ AI platforms integrated into daily governance
+- **Synergy 2026** — large-scale programme she designed and delivered from scratch (600+ applicants, zero SLA breaches)
+- **IIM Visakhapatnam, Harvard & University of Derby (UK)** — her education pedigree
+- **Founder & Director** of Le Bleu Phoenix — genuine entrepreneurial experience
+- Global client engagement, financial governance, and enterprise systems expertise
+
+What would you like to know?`)},
+
+  {id:'why_hire',p:['why hire','should we hire','best candidate','right person','suitable','recommend','case for','value she brings','make a case','convince','compelling','arguments for'],
+   r:()=>f(`Maria Helen stands out as an exceptional executive hire across every dimension:
+
+**Rare Leadership Breadth:**
+- 22+ years spanning HP enterprise tech, Dell support, operations head, founder, financial head, and C-suite advisory — almost no peer has this full-stack depth
+- Top Performer recognition at HP GlobalSoft managing mission-critical global infrastructure
+
+**Zero-Failure Execution Record:**
+- HP: >95% SLA adherence across 6 years on critical systems
+- Vignesh Enterprises: Zero major project delays, ~20% cost reduction over 4 years
+- Synergy 2026: Zero SLA breaches across 600+ applicants, 30+ teams, four live programme days
+
+**AI-Native Advantage:**
+- Operationally fluent in Claude, ChatGPT, Gemini, Perplexity, Google AI Studio, Copilot, Python — not awareness, active integration into governance, reporting, and client workflows
+- An AI-enabled director delivers 30–50% efficiency gains across their team vs a non-AI peer
+
+**Academic Excellence Under Pressure:**
+- IIM Visakhapatnam — admitted without a bachelor's degree (merit-only) while working full-time
+- SRM BBA Semester 1: O Grade (91–100%), A+ in Principles of Management
+- Harvard CS50 in progress — deepening CS and AI literacy
+
+**Founder Accountability:**
+- As Director of Le Bleu Phoenix, she has met payroll, built systems, and served clients with no safety net — that level of ownership shows in everything she does`)},
+
+  {id:'ai_skills',p:['ai','artificial intelligence','ai tools','machine learning','chatgpt','claude','gemini','copilot','perplexity','google ai','openai','python','automation','ai native','ai fluent','ai expertise','digital tools','tech savvy','software tools'],
+   r:()=>f(`Maria Helen has distinguished herself as a fully AI-integrated executive — one of the defining differentiators in her profile:
+
+**AI Platforms (Active Daily Use):**
+- **Claude (Anthropic)** — strategic analysis, governance document drafting, complex reasoning
+- **ChatGPT (OpenAI)** — content generation, client communication, research acceleration
+- **Google Gemini** — multimodal tasks, Google Workspace AI integration
+- **Perplexity AI** — real-time research, fact verification, competitive intelligence
+- **Google AI Studio** — advanced model experimentation and prompt design
+- **Microsoft Copilot** — Office 365 automation, meeting summaries, Excel AI features
+- **Notion AI** — knowledge management, SOPs, documentation
+- **Gamma** — AI-powered executive presentations
+- **Canva AI & Midjourney** — brand assets, visual content creation
+- **Python (AI-Assisted)** — automation scripts, data processing, management tool development
+
+**Formal AI Credentials:**
+- AI Tools & ChatGPT Certification
+- Python Using AI Workshop
+- Harvard CS50 (Computer Science fundamentals) — In Progress
+
+**How she applies AI operationally:**
+- Automates KPI dashboard preparation and client reporting
+- Uses AI for compliance documentation workflows (saving significant preparation time)
+- Designs AI-assisted programme frameworks (Synergy 2026 used AI for scheduling, comms, evaluation)
+- Trains teams on AI tool adoption for productivity gains`)},
+
+  {id:'csuite',p:['c-suite','c suite','csuite','director','head of','vp','vice president','chief','coo','ceo','executive','senior leader','top level','board','c level','leadership roles','director level','senior management'],
+   r:()=>f(`Maria Helen's profile is architecturally built for C-suite and Director-level mandates:
+
+**Executive Breadth:**
+- Spans IT infrastructure, financial governance, operations leadership, entrepreneurship, academic administration, and AI integration — a rare combination at any level
+- Has reported to and advised C-suite stakeholders throughout her career
+
+**Governance & Control Mindset:**
+- KPI frameworks, SLA management, KYC compliance, and structured reporting are core strengths, not supporting skills
+- Zero-failure track record is the highest standard for executive accountability
+
+**Built-From-Zero Capability:**
+- Synergy 2026: designed and delivered a 600+ person operational programme with no predecessor and no playbook
+- Le Bleu Phoenix: founded and runs a functioning business from inception
+
+**IIM Signal:**
+- IIM Visakhapatnam waived their standard bachelor's requirement for admission — this is an institutional signal of executive-calibre standing
+
+**AI Leadership Advantage:**
+- An AI-native director drives measurably higher team output and faster decision cycles
+- She is one of the rare directors who bridges traditional operations governance with modern AI capability — a combination that defines the next generation of C-suite leadership
+
+**Communication & Presence:**
+- Anchored Synergy 2026's Grand Finale on live YouTube — executive communication under pressure is proven`)},
+
+  {id:'synergy',p:['synergy','srm','event','programme','program','student','coordinator','emcee','mc','master of ceremonies','talent','competition','2026','2027','festival','college event','executive head'],
+   r:()=>f(`Synergy 2026 is Maria Helen's most powerful proof point as a Director-calibre leader:
+
+**What she built (from zero):**
+- Full operational architecture for a large-scale competitive talent programme at SRM Institute
+- Served as **Student Coordinator** (operational architect) AND **Master of Ceremonies** (live executive presenter)
+- No predecessor, no template — built every framework, process, and team structure herself
+
+**Scale of execution:**
+- **600+ applicants** — full pipeline from sourcing through selection management
+- **300+ participants** curated into structured competing teams
+- **30+ teams** run simultaneously across 4 live programme days
+- **Zero SLA breaches** — the defining metric
+
+**AI integration in Synergy:**
+- Used ChatGPT and Claude for communication frameworks, evaluation design, and scheduling
+- Used Gamma for presentation design; Perplexity for research
+- Demonstrates that she doesn't just manage at scale — she manages intelligently
+
+**Why employers should watch the footage:**
+- Day 1 (Preliminary Rounds): youtube.com/live/6KKXkAFlhQ4
+- Grand Finale: youtube.com/live/6WQ0sD9cpeU
+- You will see her anchor live television-format programming with executive composure
+
+**Synergy 2027 — Student Executive Head:**
+- Scaling to 1,000+ participants, 40+ teams, 25-member organising team
+- Designing AI-enhanced business problem-solving evaluation frameworks`)},
+
+  {id:'career',p:['career','history','background','journey','experience','timeline','work history','employment','worked','previous','past roles','job history','professional background','what has she done','roles she held'],
+   r:()=>f(`Maria Helen's 22-year career spans five distinct domains — here is the complete journey:
+
+**Phase 1 — Technology Foundation (2000–2013):**
+- Web Designer, Jeppiaar Software Park (2000–2001) — client-facing web development
+- Technical Support, Dell International Services (2004–2005) — global enterprise clientele, >95% SLA
+- Technical Solutions Consultant II-b, **HP GlobalSoft** (2007–2013) — 6 years, Top Performer, HP Storage/Server, mission-critical infrastructure for global clients
+
+**Phase 2 — Entrepreneurship (2013–2018):**
+- 5 years self-employed in agriculture and real estate — P&L ownership, capital deployment, vendor management, asset evaluation
+
+**Phase 3 — Operations Leadership (2018–2022):**
+- **Operations Head, Vignesh Enterprises** — civil & infrastructure projects, zero major delays, ~20% cost reduction, 4-year tenure
+
+**Phase 4 — Financial & Executive Leadership (2022–Present):**
+- **Founder & Director, Le Bleu Phoenix OPC** (Nov 2022–present)
+- Financial Consultant, Macthaber Inferno (Jun 2022–Mar 2023)
+- **Financial Head, Fanaticism Pvt Ltd** (Aug 2023–Dec 2024) — international partnerships
+- **Financial Head, Bertilda Instruments** (Jan 2025–present) — global client engagement, AI-integrated reporting
+
+**Phase 5 — Academic & Leadership (2025–Present):**
+- IIM Visakhapatnam PG Certificate (merit admission)
+- SRM BBA — O Grade Semester 1
+- Student Coordinator & MC, Synergy 2026 — built from zero, zero SLA breaches`)},
+
+  {id:'hp',p:['hewlett','packard','hp','globalsoft','storage','server','technical','infrastructure','it','sla','tech','consultant','enterprise it','data center','hardware','mission critical'],
+   r:()=>f(`Maria Helen's HP GlobalSoft tenure (2007–2013) is the bedrock of her technical credibility:
+
+**Progression at HP:**
+- Started in Laptop Support → promoted to Server Support → promoted to **HP Enterprise Storage**
+- Each tier required formal technical qualification and performance demonstration
+
+**HP Storage Role:**
+- Managed **mission-critical storage infrastructure** for global enterprise clients
+- These are systems where failure means data loss at enterprise scale — zero tolerance for error
+- Coordinated with global teams across multiple time zones under strict SLA frameworks
+
+**Performance Recognition:**
+- Formally recognised as **Top Performer in Technical Training** — HP's internal programme for identifying high-potential technical staff
+- Maintained **>95% SLA adherence** throughout the entire 6-year tenure
+
+**What this means for employers:**
+- She has operated in the highest-accountability technical environments that exist
+- The discipline of enterprise SLA management carries through every role she's held since
+- A Director who understands infrastructure deeply makes better decisions on systems investment, vendor management, and technology governance`)},
+
+  {id:'education',p:['education','degree','qualify','qualification','study','studied','university','college','harvard','iim','srm','derby','academic','school','bba','postgraduate','pg','diploma','certificate','qualification','academic record','where did she study','what did she study'],
+   r:()=>f(`Maria Helen's academic profile is exceptional — built alongside an active 22-year career:
+
+**Current Studies (3 institutions simultaneously):**
+- **IIM Visakhapatnam** — PG Certificate, Project Management & Strategic Leadership (2026)
+  → *Admitted without a bachelor's degree — merit-only admission on professional standing alone*
+- **SRM Institute** — BBA Digital Marketing (2025–2028)
+  → Semester 1: **O Grade (91–100%)**, A+ in Principles of Management
+- **Harvard University (Online)** — CS50, CS50 for Business Professionals, Exercising Leadership
+  → Deepening computer science and AI application knowledge
+
+**International Education:**
+- **University of Derby, United Kingdom** (1998–2002)
+  → Computer Studies, Networks & Communications
+  → First Year: Distinction
+  → Completed a Web Designer internship year in the UK
+
+**Professional Diplomas:**
+- **Diploma in Export & Import Management — Distinction**
+  → Indian Institute of International Business, Chennai
+- **Higher Secondary (Class XII) — 91.06%**
+  → Sacred Heart GHSS, Yercaud, State Board
+
+**Key signal for employers:**
+- IIM's waiver of bachelor's requirements is a formal acknowledgement of her professional calibre
+- Achieving O Grade at SRM while working full-time across multiple director-level positions demonstrates exceptional discipline`)},
+
+  {id:'founder',p:['founder','entrepreneur','own business','company','director','le bleu','phoenix','venture','self employed','business owner','startup','built','started'],
+   r:()=>f(`Maria Helen is not merely an executive — she is a genuine founder with full business ownership experience:
+
+**Le Bleu Phoenix (OPC) Private Limited:**
+- Founded: November 2022 — present (2.5+ years)
+- Structure: One-Person Company — sole director and decision-maker
+- Full scope: systems adoption, process implementation, governance frameworks, client engagement, AI-tool integration, and service delivery
+
+**What founder experience adds to her executive profile:**
+- Has met payroll, built client relationships from zero, and made hard calls without a corporate safety net
+- Understands P&L, cash flow, vendor constraints, and resource allocation at a visceral level that corporate-only leaders rarely develop
+- Every governance framework she builds is tested against real business outcomes, not just internal metrics
+
+**Earlier entrepreneurial phase (2013–2018):**
+- 5 years self-employed across agriculture and real estate
+- Capital deployment, vendor coordination, asset evaluation, and structured financial monitoring
+
+**Combined signal:**
+- A Director who has been a founder brings an **owner's accountability** to every mandate
+- She treats every organisation she works within as if it is her own — that is the rarest and most valuable executive mindset`)},
+
+  {id:'international',p:['international','global','abroad','overseas','foreign','cross border','cross-border','uk','united kingdom','worldwide','international experience','global clients','foreign clients','international work'],
+   r:()=>f(`Maria Helen has substantive international exposure across education, professional work, and client engagement:
+
+**International Education:**
+- **University of Derby, United Kingdom** (1998–2002) — lived and studied in the UK for the duration of her degree; completed a Web Designer internship year on UK soil
+- Gives her direct Western business culture immersion from foundational career stage
+
+**International Client Work:**
+- Current role at Bertilda Instruments involves **direct in-person client engagement** with international enterprise clients
+- Fanaticism Pvt Ltd (2023–2024) — managed financial governance for international business partnerships
+
+**Trade & International Business:**
+- Holds a **Distinction-grade Diploma in Export & Import Management** — International Institute of International Business, Chennai
+- Covers international trade compliance, customs documentation, and cross-border commercial frameworks
+
+**Language Capability:**
+- English (Excellent) — primary language of all client and academic work
+- Tamil (Native) — deep South India regional reach
+- French (Academic Proficiency) — studied at University of Derby, UK`)},
+
+  {id:'skills_gen',p:['skills','expertise','competency','capabilities','what can she do','proficient','good at','strong in','specialise','core skills','key skills','main skills','what does she know'],
+   r:()=>f(`Maria Helen's competency portfolio spans six domains — built over 22+ years of active practice:
+
+**AI Integration & Digital Leadership:**
+- 10+ AI platforms in daily operational use — Claude, ChatGPT, Gemini, Perplexity, Copilot, Notion AI, Gamma, Python, Midjourney, Canva AI
+- Formally certified in AI Tools & ChatGPT; completing Harvard CS50
+
+**Executive Leadership & Strategy:**
+- C-suite stakeholder management, strategic planning, governance frameworks, KPI design, SLA management, risk management, team mentoring
+
+**Enterprise Technology:**
+- HP Storage, server infrastructure, Oracle database, Advanced Excel, Python, Java, C++, HTML, networking
+
+**Financial & Compliance Governance:**
+- Financial governance, KYC, due diligence, regulatory compliance, portfolio management, cost control (20% improvement track record)
+
+**Programme & Project Delivery:**
+- End-to-end programme execution, Google PM Certified, vendor management, resource allocation, process optimisation
+- Synergy 2026: 600+ applicants, 30+ teams, zero SLA breaches
+
+**Global Client Engagement:**
+- International client relations, in-person stakeholder meetings, cross-border operations, export/import compliance, C-level advisory`)},
+
+  {id:'leadership',p:['leadership','leader','manage','management style','how does she lead','style','approach','how she works','personality','character','culture','values','principles','lead teams'],
+   r:()=>f(`Maria Helen's leadership style is defined by structure, precision, and genuine ownership:
+
+**Core Philosophy:**
+- **Governance-first** — every role begins with establishing KPIs, SLA frameworks, and reporting structures before execution
+- **Zero-failure standard** — maintained >95% SLA at HP, zero project delays at Vignesh, zero SLA breaches at Synergy 2026
+- **AI-augmented decision-making** — she applies Claude and ChatGPT not just for content but for strategic analysis and governance review
+
+**How she leads teams:**
+- Builds operational frameworks before assigning tasks — clear ownership, measurable targets, defined escalation paths
+- Mentors through clarity rather than authority — she demonstrates the standard herself first
+- As MC at Synergy's Grand Finale, she held the room under live broadcast pressure — executive composure proven in public
+
+**Stakeholder Management:**
+- Comfortable managing upward (boards, C-suite), laterally (cross-functional teams), and downward (30+ teams simultaneously at Synergy)
+- Has delivered governance presentations to international enterprise clients in person
+
+**Chess Player's Mindset:**
+- Maria plays chess — a discipline that builds pattern recognition, anticipation, and multi-step thinking under constraint — directly applicable to executive decision-making
+
+**Founder's Accountability:**
+- Having built Le Bleu Phoenix from scratch, she approaches every role with an owner's mindset — her outcomes matter to her personally`)},
+
+  {id:'achievements',p:['achievement','accomplish','proud','notable','highlight','milestone','award','recognition','top performer','best','outstanding','results','what has she achieved','track record','proven','evidence'],
+   r:()=>f(`Maria Helen's measurable achievements span 22+ years:
+
+**HP GlobalSoft:**
+- Formally recognised as **Top Performer in Technical Training** — HP's internal high-performer programme
+- Maintained **>95% SLA adherence** across 6 years managing mission-critical enterprise storage
+
+**Vignesh Enterprises:**
+- **Zero major project delays** across entire 4-year Operations Head tenure
+- **~20% cost control improvement** — sustained budget optimisation across multiple infrastructure projects
+
+**Synergy 2026:**
+- Designed and delivered a **600+ applicant programme with zero SLA breaches**
+- Built the entire operational architecture from scratch — no predecessor, no template
+- Managed 300+ participants, 30+ teams, 4 live days simultaneously
+- Anchored the **Grand Finale live on YouTube** with executive composure
+
+**Academic:**
+- **IIM Visakhapatnam** — admitted without a bachelor's degree on professional merit alone
+- **O Grade (91–100%)** at SRM BBA Semester 1 — while working across multiple director roles simultaneously
+- **First Year Distinction** at University of Derby, UK
+
+**Entrepreneurial:**
+- Founded and sustains Le Bleu Phoenix OPC Pvt Ltd — 2.5+ years of active business operations
+- **Distinction** in Export & Import Management Diploma`)},
+
+  {id:'contact',p:['contact','reach','email','phone','call','message','linkedin','how to reach','get in touch','connect','speak to','talk to'],
+   r:()=>f(`Here's how to reach Maria Helen Pandian directly:
+
+- **Email:** mariahelen2013@gmail.com
+- **Phone:** +91 8754318772
+- **LinkedIn:** linkedin.com/in/maria-helen-p-933084ba
+- **Medium:** medium.com/@mariahelen2013
+
+She is based in **Chennai, India** and is responsive to Director-level, Head of Operations, and C-suite leadership conversations.
+
+Her LinkedIn profile reflects her complete career trajectory and is actively maintained with current role details.`)},
+
+  {id:'linkedin',p:['linkedin','online profile','social','portfolio website','website','article','medium','published','thought leadership','online presence'],
+   r:()=>f(`Maria Helen maintains an active and current professional presence across multiple platforms:
+
+**LinkedIn:**
+- Profile: linkedin.com/in/maria-helen-p-933084ba
+- Reflects full career trajectory from HP GlobalSoft through current roles
+- Includes all education, certifications, and endorsements
+- Current as of 2026
+
+**Medium (Published Thought Leadership):**
+- Platform: medium.com/@mariahelen2013
+- Notable article: "Most people attend events — I built one. Here's what it really takes" — documenting Synergy 2026's complete operational story
+- Demonstrates her ability to communicate complex operational frameworks to a general executive audience
+
+**This Portfolio:**
+- Built to present her profile at Director and C-suite level
+- Includes embedded Synergy 2026 YouTube footage, full career timeline, AI skills, education credentials, and this live AI assistant
+
+**YouTube (Synergy 2026 footage):**
+- Day 1: youtube.com/live/6KKXkAFlhQ4
+- Grand Finale: youtube.com/live/6WQ0sD9cpeU`)},
+
+  {id:'ai_profile_bio',p:['ai profile','ai in her resume','ai background','how ai','ai integration','what ai does she use','ai experience','ai career','ai leadership','ai work'],
+   r:()=>f(`AI is not a peripheral skill on Maria Helen's profile — it is a core operational competency woven throughout her career:
+
+**AI as an Operations Leader:**
+- Uses Claude and ChatGPT to automate client reporting, KPI dashboard preparation, and compliance documentation at Bertilda Instruments
+- Used Gamma and Notion AI to build client presentations and SOPs at Le Bleu Phoenix
+- Applied AI research tools (Perplexity, ChatGPT) throughout Synergy 2026 programme design
+
+**AI Platforms Mastered (Active Use):**
+- Claude, ChatGPT, Gemini, Perplexity AI, Google AI Studio, Microsoft Copilot, Notion AI, Gamma, Canva AI, Midjourney — 10 platforms in regular operational deployment
+
+**Formal AI Education:**
+- AI Tools & ChatGPT Certification (formal credential)
+- Python Using AI Workshop (applied automation)
+- Harvard CS50 (Computer Science fundamentals — in progress)
+- Harvard CS50 for Business Professionals (applied AI for business contexts — in progress)
+
+**The Executive Advantage:**
+- A director who integrates AI into governance, reporting and client workflows delivers measurably higher output per resource than a non-AI peer
+- She trains teams on AI adoption — multiplication of the productivity gain across the organisation`)},
+
+  {id:'certifications',p:['certification','certifications','certified','google pm','project management certificate','certificate','credentials','qualifications','accreditation'],
+   r:()=>f(`Maria Helen holds the following professional certifications:
+
+- **Google Project Management Professional Certificate** — covers project lifecycle, risk management, stakeholder communication, agile and traditional methodologies; one of the most widely recognised PM credentials globally
+- **AI Tools & ChatGPT Certification** — formal certification in AI tool proficiency, prompt engineering, and operational AI integration
+- **Python Using AI Workshop** — applied Python development using AI-assisted coding approaches
+
+**In Progress:**
+- Harvard CS50 (Computer Science for Beginners — foundational programming and computational thinking)
+- Harvard CS50 for Business Professionals (AI and computing applied to management decisions)
+- IIM Visakhapatnam PG Certificate in Project Management & Strategic Leadership (Jan–Oct 2026)
+
+**Academic Distinctions (equivalent):**
+- O Grade (91–100%) SRM BBA Semester 1
+- First Year Distinction, University of Derby UK
+- Distinction, Diploma in Export & Import Management`)},
+
+  {id:'financial',p:['financial','finance','financial head','financial expertise','kpi','governance','compliance','kyc','budget','budgeting','cost','cost control','p&l','accounting','reporting'],
+   r:()=>f(`Financial governance is one of Maria Helen's core executive competencies:
+
+**Current Financial Leadership:**
+- Financial Head, Bertilda Instruments (Jan 2025–present) — manages KPI dashboards, financial governance, cross-border compliance, and KYC verification for international client portfolio
+- Uses AI (Claude, Copilot, Excel AI) to automate reporting preparation and compliance checklists
+
+**Prior Financial Roles:**
+- Financial Head, Fanaticism Pvt Ltd (Aug 2023–Dec 2024) — international partner financial management
+- Financial Consultant, Macthaber Inferno (Jun 2022–Mar 2023) — due diligence, risk assessment, investment opportunity evaluation
+
+**Cost Control Track Record:**
+- ~20% cost reduction as Operations Head at Vignesh Enterprises over 4 years — evidence-based, sustained financial discipline
+
+**Financial Competencies:**
+- Financial governance and reporting, KPI design & tracking, KYC verification, due diligence, risk assessment, regulatory compliance, portfolio management, budgeting, and capital allocation
+
+**International Finance:**
+- Distinction in Export & Import Management — covers international trade compliance, foreign currency frameworks, and cross-border documentation`)},
+
+  {id:'operations',p:['operations','operational','ops head','head of operations','operations head','operations management','process','process improvement','workflow','systems','run operations','manage operations'],
+   r:()=>f(`Operations leadership is the central thread of Maria Helen's executive career:
+
+**Defining Operations Role:**
+- Operations Head, Vignesh Enterprises (2018–2022) — 4 years managing complex civil and infrastructure projects end-to-end
+- Zero major delays across all projects, ~20% cost reduction, full vendor and regulatory management
+
+**Operational Methodology:**
+- Governance-first approach: KPI frameworks and SLA structures established before execution begins
+- AI-augmented operations: uses Claude, ChatGPT, and Copilot to automate reporting, flag compliance gaps, and accelerate stakeholder communication
+
+**Synergy 2026 — Operations at Scale:**
+- Designed the entire operational architecture for a 600+ applicant programme from scratch
+- Simultaneously managed 30+ teams across four live days with zero SLA breaches
+- This is operations management at its most demanding — high visibility, high stakes, no margin for error
+
+**Founder Operations:**
+- At Le Bleu Phoenix, she owns the full operational stack — client acquisition, service delivery, compliance, AI tool integration, financial governance
+
+**Key Operational Strengths:**
+- End-to-end programme execution, process design, vendor management, resource allocation, escalation management, SLA compliance, team coordination`)},
+
+  {id:'soft_skills',p:['communication','soft skills','presentation','public speaking','interpersonal','writing','people skills','articulate','confident','composure','emotional intelligence','relationship'],
+   r:()=>f(`Maria Helen's executive soft skills are evidenced — not claimed:
+
+**Public Communication:**
+- Served as **Master of Ceremonies for Synergy 2026 Grand Finale** — anchored a live YouTube-broadcast programme managing audience of 300+ participants and teams with executive composure
+- Has delivered governance presentations and client briefings to C-suite and board-level international stakeholders
+
+**Written Communication:**
+- Published thought leader on Medium — her article on Synergy 2026 demonstrates clear, compelling executive writing
+- Produces client-facing reports, governance frameworks, and compliance documentation to professional standards
+
+**Multilingual:**
+- English (Excellent) · Tamil (Native) · French (Academic) — communicates authentically across cultural contexts
+
+**Interpersonal Intelligence:**
+- As Synergy Coordinator, she managed 600+ participants, 30+ teams, vendors, faculty, and live audiences simultaneously — requiring real-time emotional intelligence and authority
+- As Financial Head with international clients, she builds trust across cultural and geographical boundaries
+
+**AI-Enhanced Communication:**
+- Uses Claude and ChatGPT to elevate the precision and impact of written deliverables without losing her own voice`)},
+
+  {id:'notice_availability',p:['notice period','when can she start','available when','availability','joining date','how soon','start date','immediate','how quickly'],
+   r:()=>f(`For specific availability and joining timeline, please contact Maria Helen directly:
+
+- **Email:** mariahelen2013@gmail.com
+- **Phone:** +91 8754318772
+- **LinkedIn:** linkedin.com/in/maria-helen-p-933084ba
+
+She is currently in active professional roles and academic programmes, and will be happy to discuss her transition timeline and availability based on the specific opportunity.`)},
+
+  {id:'differentiate',p:['different','unique','set apart','distinguish','better','competitive','edge','advantage','stand out','special','what is unique','rare','combination'],
+   r:()=>f(`What makes Maria Helen genuinely rare in the executive talent market:
+
+**The AI-Native Director:**
+- Most directors of her generation are AI-aware; very few are AI-operational. She runs 10+ AI platforms in daily practice — not experimentation, integration into governance and reporting workflows
+
+**The Full-Stack Career Trajectory:**
+- HP Enterprise Technology → Entrepreneurship → Operations Head → Financial Head → Founder → Academic Leader (IIM, Harvard, SRM simultaneously)
+- Almost no executive peer has traversed all five domains with documented, measurable outcomes at each stage
+
+**Proven Zero-Failure Standard:**
+- >95% SLA at HP. Zero project delays at Vignesh. Zero SLA breaches at Synergy. This is not a pattern — it is a discipline
+
+**Academic at the Highest Level While Actively Working:**
+- Admitted to IIM without a bachelor's degree (merit-only). O Grade at SRM BBA Semester 1. Harvard CS50 in progress — all while holding multiple director responsibilities
+
+**Built-From-Zero Capability:**
+- She has never inherited a running operation — at Le Bleu Phoenix, at Synergy 2026, at every leadership mandate she has designed the framework herself from first principles`)},
+
+  {id:'languages',p:['language','speak','tamil','english','french','bilingual','multilingual','linguistic'],
+   r:()=>f(`Maria Helen is multilingual — a meaningful asset in executive leadership:
+
+- **English** — Excellent proficiency; primary language for all international client engagement, board presentations, academic work at IIM, Harvard and University of Derby (UK)
+- **Tamil** — Native speaker; enables authentic, deep engagement with South India regional teams, vendors, and stakeholders across Chennai and surrounding markets
+- **French** — Academic proficiency; developed during her time at the University of Derby, UK
+
+This combination gives her authentic reach across global boardrooms, regional operations, and cross-cultural client environments.`)},
+
+  {id:'interests',p:['hobby','interests','outside work','personal','chess','piano','garden','travel','passion','free time','what does she enjoy'],
+   r:()=>f(`Maria Helen's personal interests reveal the depth and discipline behind her professional profile:
+
+- **Chess** — requires pattern recognition, anticipating opponent moves, multi-step planning, and decision-making under constraint — directly analogous to executive strategy
+- **Piano** — demands precision, long-term practice commitment, and memory under performance pressure — reflects how she approaches complex skill development
+- **Travelling** — having lived in the UK and engaged clients internationally, travel cultivates the cultural intelligence essential for global executive leadership
+- **Gardening** — patience, systems thinking, and nurturing growth over time — a fitting metaphor for how she builds teams, businesses, and operational frameworks
+- **AI Exploration** — continuous, self-directed learning of new AI platforms and applications; she treats AI as a living competency, not a fixed credential`)},
+
+  {id:'recommendations',p:['recommendation','reference','testimonial','what do people say','endorsement','who can vouch','linkedin recommendation'],
+   r:()=>f(`For references, testimonials, and LinkedIn recommendations, please visit Maria Helen's profile directly:
+
+**LinkedIn:** linkedin.com/in/maria-helen-p-933084ba
+
+Her profile includes professional endorsements from colleagues and clients across her career.
+
+For formal references as part of a recruitment process, please contact her directly:
+- **Email:** mariahelen2013@gmail.com
+- **Phone:** +91 8754318772
+
+She will provide detailed references appropriate to the seniority level of the role.`)},
+
+  {id:'salary_comp',p:['salary','compensation','ctc','package','pay','remuneration','how much','cost to company','what are her expectations','package expectations'],
+   r:()=>f(`Compensation expectations are aligned with senior Director and C-suite market benchmarks for a profile spanning 22+ years of executive leadership, HP GlobalSoft pedigree, IIM credentials, and AI-native operational expertise.
+
+For a direct, confidential conversation about remuneration:
+- **Email:** mariahelen2013@gmail.com
+- **Phone:** +91 8754318772
+- **LinkedIn:** linkedin.com/in/maria-helen-p-933084ba
+
+Maria welcomes a professional discussion focused on mutual value creation and organisational fit.`)}
+];
+
+// SMART SCORING ENGINE
+function score(q,patterns){
+  const qL=q.toLowerCase();
+  const qW=qL.split(/\W+/).filter(w=>w.length>2);
+  let total=0;
+  patterns.forEach(pat=>{
+    const p=pat.toLowerCase();
+    if(qL.includes(p)){total+=p.split(' ').length*4;}
+    else{
+      p.split(' ').forEach(pw=>{
+        if(pw.length>3){
+          qW.forEach(qw=>{
+            if(qw.includes(pw)||pw.includes(qw)||levenshtein(qw,pw)<=1)total+=1;
+          });
+        }
+      });
+    }
+  });
+  return total;
+}
+function levenshtein(a,b){
+  if(a===b)return 0;
+  const m=a.length,n=b.length;
+  if(m===0)return n;if(n===0)return m;
+  const d=[];
+  for(let i=0;i<=m;i++)d[i]=[i];
+  for(let j=0;j<=n;j++)d[0][j]=j;
+  for(let i=1;i<=m;i++)for(let j=1;j<=n;j++)
+    d[i][j]=a[i-1]===b[j-1]?d[i-1][j-1]:Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+1);
+  return d[m][n];
+}
+
+function processQuery(text){
+  let best=null,bestScore=0;
+  KB.forEach(intent=>{
+    const s=score(text,intent.p);
+    if(s>bestScore){bestScore=s;best=intent;}
+  });
+  return bestScore>0?best.r():f(`Thank you for your question. While I may not have a direct match for that specific query, I'm fully trained on Maria Helen's complete profile.
+
+Here's what I can answer with precision:
+- Why hire Maria Helen · C-suite readiness
+- Her AI expertise and 10+ AI platforms
+- Synergy 2026 project (600+ applicants, zero SLA breaches)
+- Full career journey (HP → Dell → Founder → Director)
+- Education (IIM, Harvard, University of Derby UK)
+- Financial governance and operations expertise
+- Contact details and LinkedIn profile
+
+Try rephrasing your question, or click one of the quick questions above.`);
+}
+
+function f(text){
+  const lines=text.split('\n');
+  let html='';let inList=false;
+  lines.forEach(line=>{
+    line=line.trim();
+    if(!line){if(inList){html+='</ul>';inList=false;}return;}
+    if(/^[-•]\s/.test(line)){
+      if(!inList){html+='<ul>';inList=true;}
+      const c=line.replace(/^[-•]\s/,'').replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>');
+      html+=`<li>${c}</li>`;
+    } else if(/^\*\*.+\*\*:?$/.test(line)){
+      if(inList){html+='</ul>';inList=false;}
+      html+=`<span class="section-head">${line.replace(/\*\*/g,'')}</span>`;
+    } else {
+      if(inList){html+='</ul>';inList=false;}
+      html+=`<span>${line.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>')}</span><br>`;
+    }
+  });
+  if(inList)html+='</ul>';
+  return html;
+}
+
+// CHAT UI
+let chatOpen=false;
+const modal=document.getElementById('cmodal');
+const msgs=document.getElementById('c-msgs');
+const inp=document.getElementById('c-input');
+const hint=document.getElementById('wb-hint');
+setTimeout(()=>{if(hint){hint.style.transition='opacity 1.2s';hint.style.opacity='0';}},9000);
+
+function toggleChat(){
+  chatOpen=!chatOpen;
+  modal.classList.toggle('open',chatOpen);
+  if(hint)hint.style.display='none';
+  if(chatOpen)setTimeout(()=>inp.focus(),380);
+}
+function ask(q){inp.value=q;sendMsg();}
+function sendMsg(){
+  const txt=inp.value.trim();if(!txt)return;
+  addUser(txt);inp.value='';
+  const ld=addTyping();
+  const delay=380+Math.random()*280;
+  setTimeout(()=>{
+    ld.innerHTML=processQuery(txt);
+    msgs.scrollTop=msgs.scrollHeight;
+  },delay);
+}
+function addUser(t){
+  const w=document.createElement('div');w.className='m-wrap usr';
+  w.innerHTML=`<div class="m-label">You</div><div class="m-msg usr">${t}</div>`;
+  msgs.appendChild(w);msgs.scrollTop=msgs.scrollHeight;
+}
+function addTyping(){
+  const w=document.createElement('div');w.className='m-wrap bot';
+  w.innerHTML=`<div class="m-label">Assistant</div><div class="m-msg bot"><div class="typing"><span></span><span></span><span></span></div></div>`;
+  msgs.appendChild(w);msgs.scrollTop=msgs.scrollHeight;
+  return w.querySelector('.m-msg.bot');
+}
+
+// PARTICLES — bright, no blur
+const cv=document.getElementById('cv');
+const ctx=cv.getContext('2d');
+let W,H,pts=[];
+function rsz(){W=cv.width=innerWidth;H=cv.height=innerHeight;}
+rsz();window.addEventListener('resize',rsz);
+class P{
+  constructor(){this.reset();}
+  reset(){
+    this.x=Math.random()*W;this.y=Math.random()*H;
+    this.vx=(Math.random()-.5)*.48;this.vy=(Math.random()-.5)*.48;
+    this.a=Math.random()*.62+.3;this.sz=Math.random()*1.9+.55;
+  }
+  update(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>W||this.y<0||this.y>H)this.reset();}
+  draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.sz,0,Math.PI*2);ctx.fillStyle=`rgba(201,168,76,${this.a})`;ctx.fill();}
+}
+for(let i=0;i<175;i++)pts.push(new P());
+function anim(){
+  ctx.clearRect(0,0,W,H);
+  pts.forEach(p=>{p.update();p.draw();});
+  for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
+    const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);
+    if(d<138){
+      ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);
+      ctx.strokeStyle=`rgba(201,168,76,${.36*(1-d/138)})`;ctx.lineWidth=.85;ctx.stroke();
+    }
+  }
+  requestAnimationFrame(anim);
+}
+anim();
+
+// SCROLL REVEAL
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');});},{threshold:.1});
+document.querySelectorAll('.rv,.tli').forEach(el=>obs.observe(el));
+document.querySelectorAll('.tli').forEach((el,i)=>{el.style.transitionDelay=`${i*.055}s`;});
+
+// COUNTERS
+new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const t=+e.target.dataset.t,sfx=t>5?'+':'';
+    let c=0,step=t/112;
+    const iv=setInterval(()=>{c+=step;if(c>=t){c=t;clearInterval(iv);}e.target.textContent=Math.floor(c)+sfx;},16);
+  });
+},{threshold:.5}).observe?document.querySelectorAll('.stat-num[data-t]').forEach(el=>{
+  new IntersectionObserver(es=>{
+    if(!es[0].isIntersecting)return;
+    const t=+el.dataset.t,sfx=t>5?'+':'';
+    let c=0;const iv=setInterval(()=>{c+=t/112;if(c>=t){c=t;clearInterval(iv);}el.textContent=Math.floor(c)+sfx;},16);
+  },{threshold:.5}).observe(el);
+}):null;
+
+// NAV — SPLIT CHARACTERS + WAVE ANIMATION
+document.querySelectorAll('.nm a .nav-txt').forEach(el=>{
+  el.innerHTML=[...el.textContent].map((c,i)=>
+    `<span class="nav-char" style="transition-delay:${i*.038}s">${c}</span>`
+  ).join('');
+});
+document.querySelectorAll('.nm a').forEach(a=>{
+  a.addEventListener('mouseenter',()=>{
+    a.querySelectorAll('.nav-char').forEach((c,i)=>{
+      c.style.animation='none';
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{
+        c.style.animation=`charRise .45s ${i*.05}s cubic-bezier(.34,1.55,.64,1) both`;
+      }));
+    });
+  });
+  a.addEventListener('mouseleave',()=>{
+    a.querySelectorAll('.nav-char').forEach(c=>{c.style.animation='none';});
+  });
+});
+
+// AUTO NAV WAVE — all menu items animate simultaneously
+(function(){
+  const links=[...document.querySelectorAll('.nm a')];
+  function waveAll(){
+    links.forEach(a=>{
+      const chars=a.querySelectorAll('.nav-char');
+      a.classList.add('auto-active');
+      chars.forEach((c,i)=>{
+        c.style.animation='none';
+        requestAnimationFrame(()=>requestAnimationFrame(()=>{
+          c.style.animation=`charRise .48s ${i*.055}s cubic-bezier(.34,1.55,.64,1) both`;
+        }));
+      });
+      const dur=chars.length*60+600;
+      setTimeout(()=>a.classList.remove('auto-active'),dur);
+    });
+    setTimeout(waveAll,2600);
+  }
+  setTimeout(waveAll,1500);
+})();
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t)t.scrollIntoView({behavior:'smooth'});
+  });
+});
+</script>
+</body>
+</html>
